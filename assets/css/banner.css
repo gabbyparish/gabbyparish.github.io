@@ -1,6 +1,7 @@
 
 .marquee3k {
   position: relative;
+  padding: -10px;
 }
 
 .marquee3k__wrapper.logo {
