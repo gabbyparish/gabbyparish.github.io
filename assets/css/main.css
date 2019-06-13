@@ -184,7 +184,7 @@ img {
  position: relative;
 } 
   
-img {
+.nav img {
   display: inline;
   vertical-align: baseline;
 }
