@@ -168,7 +168,7 @@ img {
 }
 
 .cover img {
-	width: 60%;
+	width: 40%;
 	pointer-events: none;
 	position: fixed;
 }
@@ -195,7 +195,7 @@ img {
 }
 
 .logo {
-	width: 150px;
+	width: 200px;
 	height: 100px;
 	display: inline;
 	white-space:nowrap;

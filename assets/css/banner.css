@@ -3,13 +3,13 @@
   position: relative;
 }
 
-.marquee3k__wrapper {
+.marquee3k__wrapper.logo {
 width: 300px;
+height: 95px;
 position: relative;
 }
 
 .marquee3k.marquee3k__wrapper.copy {
- 
   position: fixed;
 }
 
