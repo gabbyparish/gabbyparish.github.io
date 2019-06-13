@@ -1,6 +1,5 @@
 $( document ).ready(function() {
   Marquee3k.init();
-  Marquee3k.refresh(index);
 });
 
 
