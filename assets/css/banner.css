@@ -1,6 +1,6 @@
 .marquee3k {
   padding: 50px 0;
-  position: relative;
+  position: fixed;
   font-size:8em;
 }
 
