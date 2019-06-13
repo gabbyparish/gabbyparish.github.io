@@ -36,7 +36,6 @@ body {
 }
 
 img {
-	width: 100%;
 	display: inline;
     vertical-align: baseline;
 }
@@ -198,7 +197,9 @@ img {
 }
 
 .logo {
-	width: 250vh;
-	height: 100vh;
+	width: 250px;
+	height: 100px;
 }
 
+
+}
