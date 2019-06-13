@@ -1,16 +1,15 @@
 
 .marquee3k {
-  padding: 50px 0;
   position: relative;
-  font-size:8em;
 }
 
 .marquee3k__wrapper {
-
+width: 300px;
+position: relative;
 }
 
-.marquee3k__wrapper.copy {
-  width: 250px;
+.marquee3k.marquee3k__wrapper.copy {
+ 
   position: fixed;
 }
 
@@ -19,5 +18,5 @@
     }
 
 .copy {
-  padding:0 20px;
+ 
 }
