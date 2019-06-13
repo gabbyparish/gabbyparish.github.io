@@ -36,7 +36,7 @@ body {
 }
 
 img {
-	width: 100%;
+	width: 60%;
 	display: inline;
     vertical-align: baseline;
 }
@@ -168,9 +168,9 @@ img {
 }
 
 .cover img {
-	width: 40%;
+	width: 40px;
 	pointer-events: none;
-	position: fixed;
+	position: relative;
 }
 
 .pen {
