@@ -197,11 +197,7 @@ img {
 }
 
 .logo {
-	width: 250px;
-	height: 100px;
+	width: 250vh;
+	height: 100vh;
 }
 
-.logo img {
-	width: 100vh;
-
-}
