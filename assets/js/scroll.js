@@ -11,12 +11,12 @@
   } else if (typeof exports === 'object') {
     module.exports = factory();
   } else {
-    root.Marquee3k = factory();
+    root.marquee3k = factory();
   }
 }(this, function() {
   'use strict';
 
-  class Marquee3k {
+  class marquee3k {
     constructor(element, options) {
       this.element = element;
       this.selector = options.selector;
