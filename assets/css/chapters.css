@@ -42,7 +42,7 @@
 }
 
 .link {
-	z-index: 0;
+	z-index: 1;
 	border:1px solid black;
 }
 
