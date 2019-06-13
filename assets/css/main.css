@@ -169,7 +169,7 @@ img {
 .cover img {
 	width: 60%;
 	pointer-events: none;
-	position: absolute;
+	position: fixed;
 }
 
 .pen {
