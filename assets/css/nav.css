@@ -36,5 +36,7 @@ ul.nav li a:hover {
     z-index: 1;
 }
 
-
+.nav:hover {
+    color: blue;
+}
 
