@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tweet 4.4</title>
+
+<style type="text/css">
+	
+body {
+	background-color: #f5b970;
+}
+
+img {
+	width: 100%;
+}
+
+.sunset {
+	position: fixed;
+	width: 1300px;
+	left: 30px;
+}
+
+.fire {
+	position: fixed;
+	animation-name:colourUG1;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+}
+
+@keyframes colourUG1 {
+  
+  from {
+  	transform: skew(-30deg);
+  }
+  
+  to {
+	transform: skew(60deg);
+  }
+}
+
+.fire2 {
+	position: fixed;
+	left: 1000px;
+	width: 1000px;
+	animation-name:colourUGa;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+}
+
+@keyframes colourUGa {
+  
+  from {
+  	transform: skew(60deg);
+  }
+  
+  to {
+	transform: skew(-30deg);
+  }
+}
+
+.random {
+	color: #2b6ee9;
+	font-family: verdana;
+	font-weight: bolder;
+	font-size: 70px;
+	position: relative;
+	left: 50px;
+	animation-name:colourUGb;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+}
+
+@keyframes colourUGb {
+  
+  from {
+  	transform: skew(60deg);
+  }
+  
+  to {
+	transform: skew(-30deg);
+	color: #0f2dc2;
+	left: 200px;
+  }
+
+}
+
+.random2 {
+	color: #0f2dc2;
+	font-family: verdana;
+	font-weight: bolder;
+	font-size: 70px;
+	position: absolute;
+	left: 51px;
+	top: 1px;
+	animation-name:colourUGc;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+}
+
+@keyframes colourUGc {
+  
+  from {
+  	transform: skew(60deg);
+  }
+  
+  to {
+	transform: skew(-30deg);
+	color: #2b6ee9;
+	left: 200px;
+  }
+}
+
+.thesun {
+	position: absolute;
+	font-family: verdana;
+	font-weight: bolder;
+	font-size: 90px;
+	top: 300px;
+	color: #f3f948;
+	animation-name:colourUG3;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+}
+
+@keyframes colourUG3 {
+  
+  from {
+  	left: 0px;
+  }
+  
+  to {
+	left:1000px; 
+	transform: rotate(360deg);
+	opacity: 0.3;
+  }
+	
+}
+
+.warm {
+	color: #e14c22;
+	position: fixed;
+	left: 50px;
+	font-family: verdana;
+	font-weight: bolder;
+	font-size: 200px;
+	animation-name:colourUGq;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: linear;
+}
+
+@keyframes colourUGq {
+  
+  from {
+  	bottom: 0px;
+  }
+  
+  to {
+	bottom: 500px;
+	opacity: 0;
+  }
+}
+
+.space {
+	position: fixed;
+	width: 1500px;
+	top: -300px;
+	animation-name:colourUG;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+}
+
+@keyframes colourUG {
+  
+  from {
+  	
+  }
+  
+  to {
+	transform: rotate(360deg);
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="warm">still warm</div>
+
+<div class="fire">
+	<img src="week4images/fire.png">
+</div>
+
+<div class="fire2">
+	<img src="week4images/fire.png">
+</div>
+
+<div class="sunset">
+	<img src="week4images/sunset.png">
+</div>	
+
+<div class="space">
+	<img src="week4images/ship.png">
+</div>
+
+<div class="random">random thoughts</div>
+
+<div class="random2">random thoughts</div>
+
+<div class="thesun">
+	the sun
+</div>
+
+
+
+
+
+</body>
+</html>
