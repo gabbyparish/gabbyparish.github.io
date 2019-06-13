@@ -183,7 +183,7 @@ img {
 
 
 .marquee3k {
- position: fixed;
+ position: relative;
 } 
 
 .scroll-image {
