@@ -37,6 +37,8 @@ body {
 
 img {
 	width: 100%;
+	display: inline;
+    vertical-align: baseline;
 }
 
 .first {
@@ -184,10 +186,7 @@ img {
  position: relative;
 } 
   
-.nav img {
-  display: inline;
-  vertical-align: baseline;
-}
+
 
 .nav :hover {
 	color: blue;
