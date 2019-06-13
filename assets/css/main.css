@@ -185,6 +185,11 @@ img {
 .marquee3k {
  position: relative;
 } 
+
+.scroll-image {
+	display: inline;
+    vertical-align: baseline;
+}
   
 
 
