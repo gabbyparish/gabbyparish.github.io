@@ -24,4 +24,3 @@ $('.popup').click(function() {
 
 // end here
 });
-
