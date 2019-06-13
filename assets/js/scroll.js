@@ -4,6 +4,7 @@
  * Marquees for the new millenium v1.0
  * MIT License
  */
+ 
 Marquee3k.refresh(index);
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
