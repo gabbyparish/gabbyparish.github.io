@@ -6,6 +6,7 @@
 
 .marquee3k__wrapper img {
   width: 40%;
+  white-space: nowrap;
 }
 
 .vertical {
