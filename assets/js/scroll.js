@@ -5,7 +5,7 @@
  * MIT License
  */
 
-typeof undeclared_variable
+
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     define([], factory);
