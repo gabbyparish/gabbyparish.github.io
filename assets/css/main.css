@@ -201,3 +201,7 @@ img {
 	width: 250px;
 	height: 100px;
 }
+
+.logo img {
+	width: 40%;
+}
