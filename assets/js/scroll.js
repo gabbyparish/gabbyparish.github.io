@@ -4,19 +4,19 @@
  * Marquees for the new millenium v1.0
  * MIT License
  */
-
+Marquee3k.refresh(index);
 ;(function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     define([], factory);
   } else if (typeof exports === 'object') {
     module.exports = factory();
   } else {
-    root.marquee3k = factory();
+    root.Marquee3k = factory();
   }
 }(this, function() {
   'use strict';
 
-  class marquee3k {
+  class Marquee3k {
     constructor(element, options) {
       this.element = element;
       this.selector = options.selector;
@@ -167,11 +167,11 @@ Marquee3k.init();
 
 
 // Refresh all instances
-    //Marquee3k.refreshAll();
+//     Marquee3k.refreshAll();
 
-    // or, since all marquees are available
-    // globally, target a specific instance
-    //Marquee3k.refresh(index); // index of marquee
+//     or, since all marquees are available
+//     globally, target a specific instance
+//     Marquee3k.refresh(index); // index of marquee
 
 // Marquee3k.init({
 //     selector: '.selector-name', // define a custom classname
