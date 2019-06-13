@@ -1,11 +1,12 @@
+
 .marquee3k {
-  padding: 0px 0;
-  position: fixed;
+  padding: 50px 0;
+  position: relative;
+  font-size:8em;
 }
 
 .marquee3k__wrapper img {
   width: 40%;
-  white-space: nowrap;
 }
 
 .vertical {
