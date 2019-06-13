@@ -4,13 +4,7 @@ body {
 	overflow-x: hidden;
 }
 
-.click {
-	cursor: url(assets/images/submarine.png):auto;
-}
 
-.click img {
-	width: 20%;
-}
 
 a {
 	color:red;
@@ -27,7 +21,6 @@ body {
 
 .bg-yellow {
 	background-color:#f6fa06;
-	border-radius: 0.5px;
 }
 
 .main {
@@ -109,15 +102,8 @@ img {
 }
 
 .content {
-	border-radius: 0px 0px 5px 5px;
-	border: 1px solid black;
+	outline:2px solid black;
 }
-
-.contenttop {
-	border: 0.5px solid black;
-}
-
-
 
 .w-1of10 {
 	flex: 0 0 10%;
@@ -182,7 +168,7 @@ img {
 .cover {
 	width: 60%;
 	pointer-events: none;
-	position: relative;
+	position: absolute;
 }
 
 .pen {
@@ -197,12 +183,13 @@ img {
 .marquee3k {
  position: relative;
 } 
-
-.logo {
-	width: 40vh;
+  
+img {
+  display: inline;
+  vertical-align: baseline;
 }
 
-.logo img {
-	display: inline;
-  	vertical-align: baseline;
+.nav :hover {
+	color: blue;
 }
+
