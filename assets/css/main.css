@@ -105,6 +105,7 @@ img {
 
 .content {
 	outline:2px solid black;
+	border-radius: 0px 0px 2px 2px;
 }
 
 .contenttop {
