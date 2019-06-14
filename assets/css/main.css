@@ -107,6 +107,10 @@ img {
 	outline:2px solid black;
 }
 
+.contenttop {
+	outline:2px solid black;
+}
+
 .w-1of10 {
 	flex: 0 0 10%;
 }
