@@ -103,7 +103,7 @@
 }
 
 .image {
-	width: 500px;
+	width: 70%;
 	position: absolute;
 	z-index: 2;
 	cursor: pointer;
