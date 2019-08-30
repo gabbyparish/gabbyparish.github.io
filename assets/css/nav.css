@@ -1,0 +1,42 @@
+li {
+    list-style:none
+}
+ul {    
+    margin:0
+}
+
+ul.nav {    
+    margin:0 auto;
+    height:100%;        
+}
+
+ul.nav li {    
+    margin-left:20px;
+    float:left;
+    height:100%;
+    line-height:45px;
+}
+ul.nav li a {           
+    color:black;
+    font-weight: bold;
+    text-decoration: none;   
+}
+
+ul.nav li a:hover {           
+    color:blue;
+}
+
+.main-nav {
+    width:100vh;    
+    height:45px;
+    position:fixed;
+    background:#f6fa06;
+    -webkit-transform-origin: right top;
+    -webkit-transform:rotate(90deg) translateX(100%)translateY(-90vh);
+    z-index: 1;
+}
+
+.nav:hover {
+    color: blue;
+}
+

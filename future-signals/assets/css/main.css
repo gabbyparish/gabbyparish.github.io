@@ -1,0 +1,184 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 15px; 
+	background-color: #0606f9;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
+
+/*NAV START*/
+
+.nav {
+	width: 100%;
+	background-color: #0606f9;
+	border-bottom: 1px solid white;
+	padding: 10px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.nav-item{
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid white;
+	border-radius: 5px;
+	color: #f3e73e;
+	text-decoration: none;
+}
+
+.filter {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	color: lime;
+}
+
+.logo {
+	padding: 5px;
+}
+
+.logo img {
+	width: 3%;
+}
+
+
+
+/*NAV END*/
+
+/*HOME START*/
+
+.title {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.title img{
+	width: 100%;
+}
+
+.research {
+	display: flex;
+	flex-wrap: wrap;		
+}
+
+.research-item {
+	flex: 0 0 25%;
+	padding: 10px;
+	transition: 1s;
+	cursor: zoom-in;
+}
+
+.research-item img {
+	width: 100%;
+	border: 1px solid white;
+}
+
+.research-item span {
+	color: #f3e73e;
+	font-size: 12px;
+}
+
+.research-item video {
+	width: 100%;
+	border: 1px solid white;
+}
+
+/*HOME END*/
+
+/*ESSAY START*/
+
+.essay {
+	margin-top: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.text {
+ 	flex: 0 0 50%;
+ 	padding: 20px;
+ 	background-color: #f3e73e;
+}
+
+.text h1 {
+	font-size: 25px;
+	margin-bottom: 10px;
+	color: #0606f9;
+	font-weight: bold;
+}
+
+.text h3 {
+	font-size: 15px;
+	color: #0606f9;
+	font-weight: bold;
+}
+
+.text p {
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.space{
+	flex: 0 0 15%;
+}
+
+
+.figure {
+	flex: 0 0 33.333%;
+}
+
+.figure video {
+	width: 100%;
+}
+
+.figure span {
+	color: #f3e73e;
+	font-size: 12px;
+}
+
+/*ESSAY END*/
+
+/*INTERACTIVE CLASSES*/
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.large{
+	flex: 0 0 50%;
+	transition: 2s;
+	cursor: zoom-out;
+}
+
+.active {
+	background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tweet3.2</title>
+<style type="text/css">
+	
+	body {
+  background:#9dfd61;
+  font-family:arial;
+}
+
+.for {
+  position:fixed;
+  top:10px;
+  font-size:60px;
+  font-weight:bold;
+  color:#3c37e5;
+}
+
+.for:hover {
+  color:#ff6e42;
+  bottom:200px;
+  font-size:100px;
+  transition:2s;
+}
+
+.in {
+  color:#ff6e42;
+  font-weight:bold;
+  position:relative;
+  animation-name:spinUG;
+  animation-duration:2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  from {
+    letter-spacing:30px;
+    font-size:100px;
+    top:400px;
+    left:0px;
+  }
+  
+  to {
+    width:400px;
+    top:500px;
+    left:300px;
+  }
+  
+  
+}
+
+.utter {
+  position:fixed;
+  color:#ff6e42;
+  font-size:500px;
+   animation-name:spinUG2;
+  animation-duration:2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes spinUG2 {
+  from {
+    letter-spacing:30px;
+    font-size:100px;
+    top:100px;
+    right:0px;
+  }
+  
+  to {
+    width:400px;
+    top:500px;
+    left:300px;
+  }
+  
+}
+
+.simplicity {
+  font-family:arial black;
+  position:fixed;
+  right:20px;
+  bottom:80px;
+  font-size:180px;
+     animation-name:spinUG3;
+  animation-duration:3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes spinUG3 {
+  from {
+    color:#3c37e5;
+    left:100px;
+
+  }
+  
+  to {
+    color:white;
+    left:0px;
+  }
+  
+}
+
+.ankles {
+  font-family:arial black;
+  position:fixed;
+  right:20px;
+  bottom:30px;
+  font-size:80px;
+     animation-name:spinUG4;
+  animation-duration:3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes spinUG4 {
+  from {
+    color:white;
+    left:0px;
+
+  }
+  
+  to {
+    color:#3c37e5;
+    left:100px;
+  }
+  
+}
+</style>
+
+</head>
+<body>
+
+
+	<div class="for">for sale</div>
+<div class="simplicity">simplicity</div>
+<div class="utter">utter</div>
+<div class="ankles">around my ankles</div>
+
+<div class="in">in</div>
+
+
+
+</body>
+</html>

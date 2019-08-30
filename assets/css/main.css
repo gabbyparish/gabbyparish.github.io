@@ -1,0 +1,210 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	overflow-x: hidden;
+}
+
+
+
+a {
+	color:red;
+}
+
+body {
+	background-color: #f6fa06;
+
+}
+
+* {
+	
+}
+
+.bg-yellow {
+	background-color:#f6fa06;
+}
+
+.main {
+	padding: 10px;
+}
+
+.title {
+	font-size: 64px;
+}
+
+.width-50 {
+	width:50%;
+}
+
+img {
+	width: 60%;
+	display: inline;
+    vertical-align: baseline;
+}
+
+.first {
+	width: 15%;
+	padding: 0;
+	flex: 0 0 20%;
+}
+
+.following {
+	width: 15%;
+	padding: 0;
+	flex: 0 0 20%;
+}
+
+.menu {
+	padding: 0;
+	position: relative;
+	-webkit-transform-origin: left top;
+    -webkit-transform:rotate(90deg) translateX(-100%);
+
+}
+
+.video {
+	position: absolute;
+	padding: 20px;
+	top: 80px;
+	left: 50px;
+	z-index: -1; 
+	/*z index to position behind other objects*/
+}
+
+.video2 {
+	position: absolute;
+	padding: 20px;
+	top: 350px;
+	left: 800px;
+	z-index: -1; 
+	/*z index to position behind other objects*/
+}
+
+.video3 {
+	position: absolute;
+	padding: 20px;
+	top: 350px;
+	left: 90px;
+	z-index: -1; 
+	/*z index to position behind other objects*/
+}
+
+.video:hover {
+	z-index: 10;
+} 
+
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 0;
+}
+
+.col {
+	padding: 20px;
+}
+
+.content {
+	outline:2px solid black;
+	border-radius: 0px 0px 2px 2px;
+}
+
+.contenttop {
+	outline:2px solid black;
+}
+
+.w-1of10 {
+	flex: 0 0 10%;
+}
+
+.w-1of5 {
+	flex: 0 0 20%;
+}
+
+.w-1of4 {
+	flex: 0 0 25%;
+}
+
+.w-3of4 {
+	flex: 0 0 75%;
+}
+
+.w-1of2 {
+	flex: 0 0 50%;
+}
+
+.w-1of1 {
+	flex: 0 0 100%;
+}
+
+.w-1of3 {
+	flex: 0 0 33.33333%;
+}
+
+.w-2of3 {
+	flex: 0 0 66.66666%;
+}
+
+.intro {
+	font-size: 20px;
+	padding: 20px;
+}
+
+.intro-title {
+	font-size: 20px;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+.price {
+	padding-left: 0;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+
+.twopage .col {
+	height: 100vh;
+	overflow: scroll;
+}
+
+.sources a{
+	display: block;
+}
+
+.cover img {
+	width: 40px;
+	pointer-events: none;
+	position: relative;
+}
+
+.pen {
+	pointer-events: none;
+}
+
+
+
+/*marquee3k*/
+
+
+
+.scroll-image {
+	display: inline;
+    vertical-align: baseline;
+}
+  
+
+
+.nav :hover {
+	color: blue;
+}
+
+.logo {
+	width: 200px;
+	height: 100px;
+	display: inline;
+	white-space:nowrap;
+}
+
+
+

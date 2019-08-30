@@ -1,0 +1,23 @@
+
+.marquee3k {
+  position: relative;
+  padding: -10px;
+}
+
+.marquee3k__wrapper.logo {
+width: 300px;
+height: 95px;
+position: relative;
+}
+
+.marquee3k.marquee3k__wrapper.copy {
+  position: fixed;
+}
+
+.vertical {
+        transform: rotate(45deg);
+    }
+
+.copy {
+ padding: -10px;
+}

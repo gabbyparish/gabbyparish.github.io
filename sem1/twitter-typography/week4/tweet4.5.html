@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tweet 4.5</title>
+
+<style type="text/css">
+	
+body {
+	background-color: #aae2cc;
+}
+
+img {
+	width: 100%;
+}
+
+.water {
+	position: fixed;
+	width: 1500px;
+}
+
+.escaping {
+	color: #5614b9;
+	font-family: arial;
+	font-style: italic;
+	font-size: 60px;
+	position: fixed;
+	top: 0px;
+  	right: 0px;
+  	animation-name:colourUGe;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: linear;
+}
+
+@keyframes colourUGe {
+  
+  from {
+  	transform: skew:10deg);
+  }
+  
+  to {
+  	top: 1000px;
+	right: 1400px;
+	transform: skew:(-10deg);
+  }
+}
+
+.mist{
+	color: #5614b9;
+	font-family: arial black;
+	font-size: 150px;
+	position: fixed;
+	top: 300px;
+	animation-name:colourUGm;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: alternate;
+}
+
+@keyframes colourUGm {
+  
+  from {
+  	transform:skew(30deg);
+  }
+  
+  to {
+	transform:skew(-30deg);
+	opacity: 0;
+  }
+}
+
+.fish1 {
+	position: absolute;
+	width: 200px;
+	animation-name:colourUG1;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: linear;
+}
+
+@keyframes colourUG2 {
+  
+  from {
+  	right: -600px;
+  }
+  
+  to {
+	right: 1400px;
+  }
+}
+
+.fish2 {
+	position: absolute;
+	width: 500px;
+	animation-name:colourUG2;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: linear;
+}
+
+@keyframes colourUG1 {
+  
+  from {
+  	right: 1000px;
+  	top: -300px;
+  }
+  
+  to {
+	right: 200px;
+	top: 900px;
+  }
+}
+
+.fish3 {
+	position: absolute;
+	width: 500px;
+	bottom: -25px;
+	animation-name:colourUG4;
+  	animation-duration:10000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: linear;
+}
+
+@keyframes colourUG4 {
+  
+  from {
+  	right: -600px;
+  }
+  
+  to {
+	right: 1400px;
+  }
+}
+
+.jellyfish1 {
+	position: fixed;
+	width: 200px;
+	top: 300px;
+	animation-name:colourUG3;
+  	animation-duration:15000ms;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: linear;
+}
+
+@keyframes colourUG3 {
+  
+  from {
+  	left: 0px;
+  }
+  
+  to {
+	left:1500px; 
+  }
+	
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="water">
+	<img src="week4images/water.png">
+</div>
+
+<div class="escaping">fish escaping</div>
+
+<div class="mist">deep in the mist</div>
+
+<div class="fish3">
+	<img src="week4images/fish3.gif">
+</div>
+
+<div class="fish1">
+	<img src="week4images/fish1.gif">
+</div>
+
+<div class="fish2">
+	<img src="week4images/fish2.gif">
+</div>
+
+<div class="jellyfish1">
+	<img src="week4images/jellyfish.gif">
+</div>
+
+
+
+</body>
+</html>
