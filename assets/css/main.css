@@ -1,210 +1,227 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
-	font-size: 32px;
-	overflow-x: hidden;
+	color: blue;
+	animation-name:colourUG1;
+  animation-duration:5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
-
+@keyframes colourUG1 {
+  
+  from {
+ 
+ background-color: lime;
+  }
+  
+  to {
+ 
+ background-color: yellow;   
+  }
+}
 
 a {
 	color:red;
 }
 
-body {
-	background-color: #f6fa06;
+/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
 
+/* EXAMPLE CODE PLEASE REMOVE */
+
+.title {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 100px;
+	color: lime;
+	padding: 50px;
+	text-shadow:
+    -4px -1px 0 blue,
+     0   -2px 0 blue,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+    animation-name:colourUG;
+  animation-duration:5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
 }
 
-* {
-	
+@keyframes colourUG {
+  
+  from {
+ color: yellow;
+  }
+  
+  to {
+ color: lime; 
+  }
 }
 
-.bg-yellow {
-	background-color:#f6fa06;
 }
 
 .main {
-	padding: 10px;
+	padding: 50px;
 }
 
-.title {
-	font-size: 64px;
+.nav {
+	width: 100%;
+	padding: 20px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
 }
 
-.width-50 {
-	width:50%;
+.nav-item {
+	display: inline-block;
+	border: 1px solid blue;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 20px;
 }
 
-img {
+
+.alien img {
 	width: 60%;
-	display: inline;
-    vertical-align: baseline;
+	border:2px solid blue;
+	margin: auto;
 }
 
-.first {
+.alien2 img {
+	width: 30%;
+	border:2px solid red;
+	margin: auto;
+}
+
+.mama img {
 	width: 15%;
-	padding: 0;
-	flex: 0 0 20%;
+	top:50px;
+	left: 10px;
+	float: left;
+	transform: rotate(-20deg);
 }
 
-.following {
+.cat img {
+	width: 10%;
+	top:30px;
+	margin-left: -10px;
+	float: left;
+	transform: rotate(30deg);
+}
+
+.pup img {
+	width: 20%;
+	margin-left: -10px;
+	float: left;
+	transform: rotate(50deg);
+}
+
+.saturn img {
 	width: 15%;
-	padding: 0;
-	flex: 0 0 20%;
+	margin-left: -30px;
+	margin-top: 30px;
+	float: left;
+	transform: rotate(-30deg);
 }
 
-.menu {
-	padding: 0;
-	position: relative;
-	-webkit-transform-origin: left top;
-    -webkit-transform:rotate(90deg) translateX(-100%);
-
+.globe img {
+	width: 15%;
+	margin-left: -10px;
+	float: left;
+	transform: rotate(-10deg);
+}
+.skull img {
+	width: 20%;
+	margin-left: -10px;
+	margin-top: 10px;
+	float: left;
+	transform: rotate(40deg);
 }
 
-.video {
-	position: absolute;
+.yoshi img {
+	width: 20%;
+	margin-left: -60px;
+	margin-top: -120px;
+	float: left;
+	transform: rotate(-20deg);
+}
+
+.tiger img {
+	width: 20%;
+	margin-left: -80px;
+	margin-top: -100px;
+	float: left;
+	transform: rotate(40deg);
+}
+
+.totoro img {
+	width: 20%;
+	margin-left: 10px;
+	margin-top: -120px;
+	float: left;
+	transform: rotate(-20deg);
+}
+
+.spiderman img {
+	width: 20%;
+	margin-left: -60px;
+	margin-top: -100px;
+	float: left;
+	transform: rotate(20deg);
+}
+
+.grim img {
+	width: 2.5%;
+	margin-left: 15px;
+	margin-top: 10px;
+	float: left;
+	transform: rotate(20deg);
+}
+
+.billy img {
+	width: 10%;
+	margin-left: 15px;
+	margin-top: -100px;
+	float: left;
+	transform: rotate(-20deg);
+}
+
+.bear img {
+	width: 30%;
+	margin-left: 15px;
+	margin-top: -130px;
+	float: left;
+	transform: rotate(-20deg);
+}
+
+.cowboy img {
+	width: 5%;
+	margin-left: -15px;
+	margin-top: 10px;
+	float: left;
+	transform: rotate(-20deg);
+}
+
+
+
+.block {
+	display: inline-block;
 	padding: 20px;
-	top: 80px;
-	left: 50px;
-	z-index: -1; 
-	/*z index to position behind other objects*/
+	width:200px;
+	background-color:black;
+	color:#fff;
 }
 
-.video2 {
-	position: absolute;
-	padding: 20px;
-	top: 350px;
-	left: 800px;
-	z-index: -1; 
-	/*z index to position behind other objects*/
+.centerblock {
+	width:500px;
+	margin: auto;
 }
 
-.video3 {
-	position: absolute;
-	padding: 20px;
-	top: 350px;
-	left: 90px;
-	z-index: -1; 
-	/*z index to position behind other objects*/
+.centerblock img {
+	width: 100%;
 }
-
-.video:hover {
-	z-index: 10;
-} 
-
-
-.grid {
-	display: flex;
-	flex-wrap: wrap;
-	z-index: 0;
-}
-
-.col {
-	padding: 20px;
-}
-
-.content {
-	outline:2px solid black;
-	border-radius: 0px 0px 2px 2px;
-}
-
-.contenttop {
-	outline:2px solid black;
-}
-
-.w-1of10 {
-	flex: 0 0 10%;
-}
-
-.w-1of5 {
-	flex: 0 0 20%;
-}
-
-.w-1of4 {
-	flex: 0 0 25%;
-}
-
-.w-3of4 {
-	flex: 0 0 75%;
-}
-
-.w-1of2 {
-	flex: 0 0 50%;
-}
-
-.w-1of1 {
-	flex: 0 0 100%;
-}
-
-.w-1of3 {
-	flex: 0 0 33.33333%;
-}
-
-.w-2of3 {
-	flex: 0 0 66.66666%;
-}
-
-.intro {
-	font-size: 20px;
-	padding: 20px;
-}
-
-.intro-title {
-	font-size: 20px;
-	padding: 10px;
-	font-weight: bolder;
-}
-
-.price {
-	padding-left: 0;
-	font-size: 20px;
-	padding: 10px;
-	font-weight: bolder;
-}
-
-
-.twopage .col {
-	height: 100vh;
-	overflow: scroll;
-}
-
-.sources a{
-	display: block;
-}
-
-.cover img {
-	width: 40px;
-	pointer-events: none;
-	position: relative;
-}
-
-.pen {
-	pointer-events: none;
-}
-
-
-
-/*marquee3k*/
-
-
-
-.scroll-image {
-	display: inline;
-    vertical-align: baseline;
-}
-  
-
-
-.nav :hover {
-	color: blue;
-}
-
-.logo {
-	width: 200px;
-	height: 100px;
-	display: inline;
-	white-space:nowrap;
-}
-
 
 
