@@ -1,6 +1,5 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
-	color: blue;
 	animation-name:colourUG1;
   animation-duration:5000ms;
   animation-iteration-count: infinite;
@@ -22,7 +21,7 @@ body {
 }
 
 a {
-	color:red;
+	text-decoration: none;
 }
 
 /* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
@@ -82,6 +81,7 @@ a {
 	border-radius: 5px;
 	font-size: 20px;
 	color: blue;
+	text-decoration: none;
 }
 
 
