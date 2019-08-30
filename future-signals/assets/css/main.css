@@ -147,8 +147,10 @@ a {
 
 .site a{
 	border: 1px solid white;
+	border-radius: 3px;
+	color: #f3e73e;
+	text-decoration: none;
 	padding: 5px;
-	border-radius: 5px;
 }
 
 /*ESSAY END*/
