@@ -5,6 +5,7 @@ body {
 }
 
 a {
+	color: #f3e73e;
 	text-decoration: none;
 }
 
@@ -132,7 +133,7 @@ a {
 
 
 .figure {
-	flex: 0 0 33.333%;
+	flex: 0 0 35%;
 }
 
 .figure video {
@@ -142,6 +143,12 @@ a {
 .figure span {
 	color: #f3e73e;
 	font-size: 12px;
+}
+
+.site a{
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 /*ESSAY END*/
