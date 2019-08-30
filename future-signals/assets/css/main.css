@@ -39,7 +39,10 @@ a {
 }
 
 .logo {
-	padding: 5px;
+	padding: 10px;
+	border-radius: 20px;
+	color: lime;
+	border: 1px solid lime;
 }
 
 .logo img {
