@@ -54,5 +54,9 @@ $(document).ready(function(){
 		$('.research-item').removeClass('hide');
 	});
 
+	// VIDEO
+
+	var video = document.getElementById("bg-video");
+
 
 });

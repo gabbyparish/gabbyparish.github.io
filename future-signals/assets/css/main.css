@@ -5,9 +5,26 @@ body {
 }
 
 a {
-	color: #f3e73e;
 	text-decoration: none;
 }
+
+/*ENTER PAGE START*/
+
+#bg-vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.enter {
+	text-align: center;
+	font-size: 100px;
+	color: #f3e73e;
+}
+
+/*ENTER PAGE END*/
 
 /* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
 
@@ -40,10 +57,7 @@ a {
 }
 
 .logo {
-	padding: 10px;
-	border-radius: 20px;
-	color: lime;
-	border: 1px solid lime;
+	padding: 5px;
 }
 
 .logo img {
@@ -133,7 +147,7 @@ a {
 
 
 .figure {
-	flex: 0 0 35%;
+	flex: 0 0 33.333%;
 }
 
 .figure video {
@@ -143,14 +157,6 @@ a {
 .figure span {
 	color: #f3e73e;
 	font-size: 12px;
-}
-
-.site a{
-	border: 1px solid white;
-	border-radius: 3px;
-	color: #f3e73e;
-	text-decoration: none;
-	padding: 5px;
 }
 
 /*ESSAY END*/
