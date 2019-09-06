@@ -1,9 +1,39 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
+	background-color: black;
+	color: white;
 }
 
 a {
 	color:red;
 }
 
+/*INDEX HOMEPAGE*/
+
+.index-intro {
+	font-size: 18px;
+	margin-bottom: 25vh;
+	padding: 10px;
+}
+
+.index-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-top: 2px solid white;
+}
+
+.index-name {
+	flex:  0 0 50%;
+}
+
+.index-layer {
+	flex: 0 0 25%;
+}
+
+.index-tag {
+	flex: 0 0 25%;
+}
