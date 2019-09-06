@@ -37,3 +37,36 @@ a {
 .index-tag {
 	flex: 0 0 25%;
 }
+
+/*INDEX END*/
+
+/*IP PAGE*/
+
+.ip {
+	background-color: blue;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ip-text {
+	color: lime;
+	font-size: 14vw;
+	text-align: center;
+}
+
+/*IP END*/
+
+
+
+
+
+
+
+
+
+
+
+
