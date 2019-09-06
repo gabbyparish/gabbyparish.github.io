@@ -53,20 +53,100 @@ a {
 
 .ip-text {
 	color: lime;
-	font-size: 14vw;
+	font-size: 15vw;
 	text-align: center;
 }
 
 /*IP END*/
 
+/*CHECKERS START*/
+
+.checkers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.checkers-orange {
+	width: 50vw;
+	height: 50vh;
+	background-color: orange;
+}
+
+.checkers-blue {
+	width: 50vw;
+	height: 50vh;
+	background-color: blue;
+}
+
+/*CHECKERS TYPE*/
+
+.checkers-type{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0 ;
+	top: 0;
+}
+
+.checkers-text {
+	font-size: 20vw;
+	color: yellow;
+	border: 10px solid blue;
+	padding: 2vw;
+	border-radius: 5vw;
+}
+
+/*CHECKERS END*/
 
 
+/*CLOUD PATTERN*/
 
+.cloud-pattern {
+	display: flex;
+	flex-wrap: wrap;
+	background-image: linear-gradient(blue, orange)
+}
 
+.cloud-circle {
+	width: 25vw;
+	height: 25vw;
+	background-image: linear-gradient(blue, cyan, orange);
+	border-radius: 50%;
+}
 
+/*CLOUD PATTERN END*/
 
+/*CHIP START*/
 
+.chip-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: yellow;
+}
 
+.chip {
+	width: 60vh;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid gray;
+	padding: 10px;
+	background-color: #4a5dec;
+}
 
+.text {
+	color: gray;
+	border: 1px solid gray;
+	font-size: 5vw;
+}
+
+/*CHIP END*/
 
 
