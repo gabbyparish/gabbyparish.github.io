@@ -149,4 +149,119 @@ a {
 
 /*CHIP END*/
 
+/*404 ERROR START*/
+.error-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.error-orange {
+	width: 20vw;
+	height: 20vh;
+	background-color: #fd5a5a;
+}
+
+.error-blue {
+	width: 20vw;
+	height: 20vh;
+	background-color: #1b018f;
+}
+
+.error-orange span {
+	color: #1b018f;
+	border: 1px solid #1b018f;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.error-blue span {
+	color: #fd5a5a;
+	border: 1px solid #fd5a5a;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.error-type {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0 ;
+	top: 0;
+}
+
+.error-big {
+	font-size: 20vw;
+	color: #fd5a5a;
+	border: 10px solid #1b018f;
+	padding: 2vw;
+	border-radius: 3vw;
+}
+
+/*404 ERROR END*/
+
+/*CD START*/
+
+
+
+/*CD END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
