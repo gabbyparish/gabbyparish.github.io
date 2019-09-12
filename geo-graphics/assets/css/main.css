@@ -1,7 +1,7 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
-	background-color: black;
+	background-color: white;
 	color: white;
 }
 
@@ -335,10 +335,146 @@ a {
 
 /*BARCODE END*/
 
+/*STAMP START*/
+
+.stamp-container {
+	align-items: center;
+	justify-content: center;
+	display: inline-block;
+}
+
+.stamp {
+  margin-top: 50px;
+  margin-left: 50px;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: #fdc4e1;
+  -webkit-filter: drop-shadow(3px 3px 1px black);
+}
+.stamp:before {
+  position: absolute;
+  top: -20px;
+  display: block;
+  content: "";
+  background: radial-gradient(circle, transparent 15px, #fdc4e1 16px);
+  background-size: 50px 40px;
+  background-position: -20px -20px;
+  width: 100%;
+  height: 40px;
+  z-index: -1;
+}
+.stamp:after {
+  position: absolute;
+  bottom: -20px;
+  content: "";
+  display: block;
+  background: radial-gradient(circle, transparent 15px, #fdc4e1 16px);
+  background-size: 50px 40px;
+  background-position: -20px -20px;
+  width: 100%;
+  height: 40px;
+  z-index: -1;
+}
+
+.stamp-fill {
+	background-color: blue;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.text {
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #fdc4e1;
+	border-radius: 5px;
+}
+
+/*STAMP END*/
 
 
+/*DOCUMENTS START*/
+.doc-container {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f8cdd1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.doc {
+	width: 90vh;
+	height: 70vh;
+	border: 2px solid blue;
+	display: flex;
+	justify-content: center;
+}
 
+.doc-side {
+	width: 40vh;
+	height: 70vh;
+	border: 2px solid blue;
+}
+
+.doc-side-contents {
+	width: 40vh;
+	height: 5vh;
+	border: 1px solid blue;
+}
+
+.doc-title {
+	font-size: 20px;
+	color: black;
+	padding: 10px;
+}
+
+.doc-side-contents-special {
+	width: 40vh;
+	height: 5vh;
+	border: 1px solid blue;
+	background-color: blue;
+}
+
+.doc-title-special {
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+}
+
+.doc-main {
+	width: 60vh;
+	height: 70vh;
+	border: 2px solid blue;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 23px;
+}
+
+.doc-box {
+	width: 5vw;
+	height: 5vh;
+	background-color: blue;
+	display: inline-block;
+	padding: 10px;
+}
+
+/*DOCUMENTS END*/
+
+/*QR CODE START*/
+
+#qrcode {
+  width:160px;
+  height:160px;
+  margin-top:15px;
+}
+
+/*QRCODE END*/
 
 
 
