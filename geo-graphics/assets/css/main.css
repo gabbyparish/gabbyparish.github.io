@@ -111,8 +111,8 @@ a {
 }
 
 .cloud-circle {
-	width: 25vw;
-	height: 25vw;
+	width: 10vw;
+	height: 10vw;
 	background-image: linear-gradient(blue, cyan, orange);
 	border-radius: 50%;
 }
@@ -208,11 +208,132 @@ a {
 
 /*CD START*/
 
+.cd-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #7302fe;
+}
+
+.cd-package {
+	width: 70vh;
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #d1e21e;
+	padding: 10px;
+	background-color: #7302fe;
+}
+
+.disc {
+	width: 50vh;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #d1e21e;
+	border-radius: 190px;
+	padding: 10px;
+	background-color: #d1e21e;
+	position: fixed;
+}
+
+.hole {
+	width: 5vh;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #d1e21e;
+	border-radius: 190px;
+	padding: 10px;
+	background-color: #7302fe;
+	position: fixed;
+}
+
+.big-hole {
+	width: 8vh;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #7302fe;
+	border-radius: 190px;
+	padding: 10px;
+	background-color: #d1e21e;
+	position: fixed;
+}
+
+.disc-text	{
+	border-bottom: 1px solid #7302fe;
+}
 
 
 /*CD END*/
 
+/*BARCODE START*/
+.bg {
+	position: fixed;
+}
 
+.bg-pattern {
+	display: flex;
+	flex-wrap: wrap;
+	background-image: linear-gradient(#fd5ba9, #efe754)
+}
+
+.bg-circle {
+	width: 10vw;
+	height: 10vw;
+	background-image: linear-gradient(#f6333a, #fd5ba9, #efe754);
+	border-radius: 50%;
+}
+
+.barcode {
+	width: 200vh;
+	height: 60vh;
+	display: flex;
+	padding: 10px;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.barcode-line-thick {
+	width: 8vh;
+	height: 60vh;
+	padding: 10px;
+	background-color: black;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.barcode-line-medium {
+	width: 5vh;
+	height: 60vh;
+	padding: 10px;
+	background-color: black;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.barcode-line-thin {
+	width: 1vh;
+	height: 60vh;
+	padding: 10px;
+	background-color: black;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.barcode-text {
+	color: black;
+	font-size: 50px;
+}
+
+/*BARCODE END*/
 
 
 
