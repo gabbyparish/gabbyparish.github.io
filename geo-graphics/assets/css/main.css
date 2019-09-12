@@ -466,15 +466,63 @@ a {
 
 /*DOCUMENTS END*/
 
-/*QR CODE START*/
+/*NOTIF START*/
 
-#qrcode {
-  width:160px;
-  height:160px;
-  margin-top:15px;
+.notif-bg {
+	background-color: blue;
+	width: 100vw;
+	height: 100vh;
 }
 
-/*QRCODE END*/
+.notif-container {
+	position: fixed;
+	width: 50vw;
+	height: 20vh;
+	background-image: linear-gradient(blue, lightblue, white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin-top: 200px;
+	margin-left: 300px;
+}
+
+.notif-container2 {
+	position: fixed;
+	width: 50vw;
+	height: 20vh;
+	background-image: linear-gradient(blue, lightblue, white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin-top: 500px;
+	margin-left: 100px;
+}
+
+.notif-container3 {
+	position: fixed;
+	width: 50vw;
+	height: 20vh;
+	background-image: linear-gradient(blue, lightblue, white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin-top: 300px;
+	margin-left: 800px;
+}
+
+.notif {
+	color: black;
+	font-size: 20px;
+	padding: 20px;
+}
+
+/*NOTIF END*/
 
 
 
