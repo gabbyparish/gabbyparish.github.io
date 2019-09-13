@@ -524,10 +524,69 @@ a {
 
 /*NOTIF END*/
 
+/*NETFLIX START*/
 
+.eyes {
+	width:100%;
+	height:100vh;
+	background-color: #000;
+	position: fixed;
+}
 
+.eyes img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	background-color: #000;
+}
+}
 
+.nf-container {
+	background-color: yellow;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
 
+}
+
+.nf {
+	width: 100vw;
+	height: 10vh;
+	background-color: blue;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	mix-blend-mode:difference;
+}
+
+.nf-text {
+	font-size: 100%;
+	mix-blend-mode:difference;
+	 /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    margin-left: -20px;
+  }
+  
+  
+  
+  100% {
+    margin-left: 800px;
+  }
+  
+}
+}
+
+/*NETFLIX END*/
 
 
 
