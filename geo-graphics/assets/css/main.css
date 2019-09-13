@@ -545,6 +545,7 @@ a {
 	background-color: yellow;
 	width: 100vw;
 	height: 100vh;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 
@@ -552,12 +553,12 @@ a {
 
 .nf {
 	width: 100vw;
-	height: 10vh;
+	height: 16.666vh;
 	background-color: blue;
-	padding: 10px;
 	display: flex;
-	flex-wrap: wrap;
 	mix-blend-mode:difference;
+	justify-content: center;
+	align-items: center;
 }
 
 .nf-text {
@@ -565,26 +566,27 @@ a {
 	mix-blend-mode:difference;
 	 /*   add your animation name and settings here */
   animation-name:spinUG;
-  animation-duration:5s;
+  animation-duration:10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
+  animation-direction: alternate;
 }
 
 /*   add your starting state and your end state  */
 @keyframes spinUG {
   
   0% {
-    margin-left: -20px;
+    margin-left: -2000px;
   }
   
   
   
   100% {
-    margin-left: 800px;
+    margin-left: 1000px;
   }
   
 }
-}
+
 
 /*NETFLIX END*/
 
@@ -730,8 +732,52 @@ a {
 
 /*LOCATION END*/
 
+/*BIG 4 START*/
+.big4 {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 20vw;
+	-webkit-text-stroke: 3px black;
+}
+
+.google {
+	width: 50%;
+	height: 50vh;
+	background-color: orange;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.amazon {
+	width: 50%;
+	height: 50vh;
+	background-color: blue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.facebook {
+	width: 50%;
+	height: 50vh;
+	background-color: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.apple {
+	width: 50%;
+	height: 50vh;
+	background-color: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
+/*BIG 4 END*/
 
 
 
