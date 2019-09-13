@@ -589,6 +589,147 @@ a {
 /*NETFLIX END*/
 
 
+/*LOCATION START*/
+
+
+.location-bg {
+	width:100%;
+	height:100vh;
+	background-color: #000;
+}
+
+.location-bg img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	background-color: #000;
+	position: fixed;
+}
+
+.location-yellow {
+	width: 50vw;
+	height: 50vh;
+	background-color: yellow;
+	display: flex;
+	flex-wrap: wrap;
+	mix-blend-mode:difference;
+/*animation start*/
+	animation-name:locyel;
+  	animation-duration:10s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
+}
+
+/*   add your starting state and your end state  */
+@keyframes locyel {
+  
+  0% {
+  	transform: rotate(90deg);
+    margin-left: -20px;
+    border-radius: 200px;
+  }
+  
+  50% {
+  	border-radius: 0px;
+  }
+  
+  
+  100% {
+    margin-left: 800px;
+    border-radius: 300px;
+
+  }
+  
+}
+
+
+.location-red {
+	width: 20vw;
+	height: 50vh;
+	background-color: red;
+	display: flex;
+	flex-wrap: wrap;
+	mix-blend-mode:difference;
+/*animation start*/
+	animation-name:locred;
+  	animation-duration:8s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate;
+}
+
+/*   add your starting state and your end state  */
+@keyframes locred {
+  
+  0% {
+  	transform: rotate(30deg);
+    margin-left: -10px;
+    margin-top: 0px;
+    border-radius: 0px;
+  }
+  
+  50% {
+  	border-radius: 200px;
+  }
+  
+  
+  100% {
+    margin-left: 1000px;
+    border-radius: 300px;
+    margin-top: 50px;
+  }
+  
+}
+
+.location-pink {
+	width: 40vw;
+	height: 20vh;
+	background-color: #f737f1;
+	display: flex;
+	flex-wrap: wrap;
+	mix-blend-mode:difference;
+/*animation start*/
+	animation-name:locpink;
+  	animation-duration:15s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
+}
+
+/*   add your starting state and your end state  */
+@keyframes locpink {
+  
+  0% {
+  	transform: rotate(360deg);
+    margin-left: 800px;
+    margin-top: -600px;
+    border-radius: 0px;
+  }
+  
+  50% {
+  	border-radius: 200px;
+  }
+  
+  
+  100% {
+    margin-left: -20px;
+    border-radius: 300px;
+    margin-top: -800px;
+  }
+  
+}
+
+.location-container {
+	background-color: yellow;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+/*LOCATION END*/
+
 
 
 
