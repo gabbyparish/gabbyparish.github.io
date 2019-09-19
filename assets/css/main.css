@@ -148,6 +148,17 @@ a {
 	padding: 5px;
 }
 
+.projects-text :hover a {
+	background-color: black;
+	color: white;
+}
+
+.projects a {
+	color: black;
+	text-decoration: none;
+}
+
+
 /*PROJECTS END*/
 
 

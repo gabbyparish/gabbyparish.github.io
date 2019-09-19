@@ -1,0 +1,268 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+a {
+	color:red;
+}
+
+/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
+
+
+/*OPEN START*/
+
+
+
+
+/*OPEN END*/
+
+/*NAV START*/
+
+.nav {
+	width: 100%;
+	padding: 5px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #0210d4;
+	border-bottom: 2px solid black;
+}
+
+.nav-item {
+	font-size: 15px;
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+}
+
+.nav-item:hover {
+	font-style: italic;
+}
+
+.nav-item img {
+	width: 10%;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: white;
+}
+
+/*NAV END*/
+
+/*HOME START*/
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.logo {
+	width: 33.333%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo img {
+	width: 90%;
+}
+
+.menu {
+	width: 33.333%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+    color: #0210d4;
+    font-size: 5vh;
+}
+
+.menu-item {
+	/*align-self: top;*/
+	flex-grow: 0;
+	width: 100%;
+	padding: 20px;
+}
+
+.menu-item:hover a{
+	color: white;
+	-webkit-text-stroke: 1px black;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: #0210d4;
+}
+
+.text-image {
+	width: 33.333%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-image img {
+	width: 90%;
+}
+
+/*HOME END*/
+
+/*ABOUT START*/
+.text-box {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+.text-item {
+	font-family: 'Helvetica';
+	font-size: 15px;
+	padding: 5px;
+}
+
+.text-item p {
+	padding: 5px;
+}
+
+.text-item h3 {
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+    color: #0210d4;
+    border-bottom: 1px solid #0210d4;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/*ABOUT END*/
+
+/*CENTRAL PARK 5 START*/
+
+.cp5 {
+	margin-top: 10vh;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 20px;
+}
+
+.cp5 a {
+	color: #0210d4;
+}
+
+.cp5-text {
+	flex-grow: 0;
+	width: 50%;
+	font-family: 'Helvetica';
+	font-size: 15px;
+	padding: 10px;
+}
+
+.cp5-text p {
+	padding: 5px;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.cp5-text p span{
+	font-size: 20px;
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+         color: #0210d4;
+    padding-top: 20px;
+}
+
+.cp5-text h3 {
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+    color: #0210d4;
+    border-bottom: 1px solid #0210d4;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cp5-text h4 {
+	font-family: 'monument_extendedultrabold';
+    src: url('fonts/webfontkit1/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit1/monumentextended-ultrabold-webfont.woff') format('woff');
+         color: white;
+    -webkit-text-stroke: 1px #0210d4;
+    padding: 10px;
+    font-size: 45px;
+}
+
+.cp5-text h5 {
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+    color: #0210d4;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cp5-image {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.cp5-image img {
+	width: 90%;
+}
+
+.cp5-name {
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+    color:black;
+    font-size: 15px;
+    padding: 5px;
+}
+
+/*CENTRAL PARK 5 END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
