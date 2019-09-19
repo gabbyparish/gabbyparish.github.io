@@ -126,15 +126,27 @@ a {
 
 .projects {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
 
+.project-title {
+	margin-top: 100px;
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size:10vh;
+	font-family: 'le_murmure_regularregular';
+    src: url('fonts/le-murmure/le_murmure-regular_web-webfont.woff2') format('woff2'),
+         url('fonts/le-murmure/le_murmure-regular_web-webfont.woff') format('woff');
+}
+
 .projects-text {
-	width: 50vw;
 	color: black;
 	font-size: 3vh;
 	padding: 50px;
@@ -158,20 +170,13 @@ a {
 	text-decoration: none;
 }
 
-.project-title {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size:10vh;
-	font-family: 'le_murmure_regularregular';
-    src: url('fonts/le-murmure/le_murmure-regular_web-webfont.woff2') format('woff2'),
-         url('fonts/le-murmure/le_murmure-regular_web-webfont.woff') format('woff');
-}
-
-
 /*PROJECTS END*/
 
+/*SOCIAL START*/
+
+
+
+/*SOCIAL END*/
 
 
 
