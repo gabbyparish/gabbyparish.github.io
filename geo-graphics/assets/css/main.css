@@ -1,7 +1,7 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
-	background-color: white;
+	background-color: black;
 	color: white;
 }
 
@@ -775,10 +775,41 @@ a {
 	align-items: center;
 	justify-content: center;
 }
-
-
 /*BIG 4 END*/
 
+/*HEAVEN START*/
+
+.heaven-grid {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 20vw;
+	color: black;
+}
+
+.swirl {
+	width: 100vw;
+	height: 100vw;
+	filter: blur(15px);
+}
+
+.swirl img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	background-color: #000;
+	position: fixed;
+}
+
+.heaven-bg {
+	width: 50vw;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*HEAVEN END*/
 
 
 
