@@ -802,7 +802,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	display: flex;
-
+	background-color: blue;
 }
 
 .swirl img:hover {
@@ -817,7 +817,6 @@ a {
 	filter: blur(15px);
 	position: fixed;
 }
-
 
 
 /*HEAVEN END*/
