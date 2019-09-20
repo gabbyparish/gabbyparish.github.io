@@ -575,11 +575,11 @@ a {
 }
 
 .nf-text {
-	font-size: 100%;
+	font-size: 4vh;
 	mix-blend-mode:difference;
 	 /*   add your animation name and settings here */
   animation-name:spinUG;
-  animation-duration:10s;
+  animation-duration:5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
   animation-direction: alternate;
@@ -818,8 +818,89 @@ a {
 	position: fixed;
 }
 
-
 /*HEAVEN END*/
+
+/*FACES START*/
+
+.face {
+	display: flex;
+	background-color: blue;
+	flex-wrap: wrap;
+	color: white;
+}
+
+.happy {
+	width: 25%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.sad {
+	width: 25%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.scared {
+	width: 25%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.confused {
+	width: 25%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.pop {
+  width:200px;
+  height:200px;
+  position: fixed;
+  visibility: hidden;
+}
+
+.p-happy {
+  top:40px;
+  right:40px;
+  background-color: yellow;
+}
+
+.p-sad {
+  top:10px;
+  left:400px;
+  background-color: blue;  
+}
+
+.p-scared {
+  top:10px;
+  left:400px;
+  background-color: blue;  
+}
+
+.p-confused {
+  top:10px;
+  left:400px;
+  background-color: blue;  
+}
+
+.rollover {
+  color:red;
+}
+
+.p-show {
+  visibility: visible;
+}
+
+/*FACES END*/
 
 
 
