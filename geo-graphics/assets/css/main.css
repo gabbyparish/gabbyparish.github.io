@@ -837,6 +837,25 @@ a {
 	display: flex;
 }
 
+.happy-content {
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	position: fixed;
+	z-index: 0px;
+}
+
+.happy-content img {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	position: fixed;
+	z-index: -1px;
+}
+
+
 .sad {
 	width: 25%;
 	height: 100vh;
@@ -861,44 +880,6 @@ a {
 	display: flex;
 }
 
-.pop {
-  width:200px;
-  height:200px;
-  position: fixed;
-  visibility: hidden;
-}
-
-.p-happy {
-  top:40px;
-  right:40px;
-  background-color: yellow;
-}
-
-.p-sad {
-  top:10px;
-  left:400px;
-  background-color: blue;  
-}
-
-.p-scared {
-  top:10px;
-  left:400px;
-  background-color: blue;  
-}
-
-.p-confused {
-  top:10px;
-  left:400px;
-  background-color: blue;  
-}
-
-.rollover {
-  color:red;
-}
-
-.p-show {
-  visibility: visible;
-}
 
 /*FACES END*/
 
