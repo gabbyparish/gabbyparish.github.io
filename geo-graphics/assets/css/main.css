@@ -748,13 +748,12 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 20vw;
-	-webkit-text-stroke: 3px black;
 }
 
 .google {
 	width: 50%;
 	height: 50vh;
-	background-color: orange;
+	background-color: lime;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -772,7 +771,7 @@ a {
 .facebook {
 	width: 50%;
 	height: 50vh;
-	background-color: yellow;
+	background-color: blue;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -781,7 +780,7 @@ a {
 .apple {
 	width: 50%;
 	height: 50vh;
-	background-color: red;
+	background-color: lime;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -835,24 +834,25 @@ a {
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	/*animation start*/
+	animation-name:happy;
+  	animation-duration:3s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
 }
 
-.happy-content {
-	width: 100%;
-	height: 100%;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	position: fixed;
-	z-index: 0px;
-}
-
-.happy-content img {
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	position: fixed;
-	z-index: -1px;
+/*   add your starting state and your end state  */
+@keyframes happy {
+  
+  0% {
+  	margin-top: -400px;
+  }
+  
+  
+  100% {
+    margin-top: 300px;
+  }
 }
 
 
@@ -862,14 +862,52 @@ a {
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	/*animation start*/
+	animation-name:sad;
+  	animation-duration:3s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
+}
+
+/*   add your starting state and your end state  */
+@keyframes sad {
+  
+  0% {
+  	margin-top: 0px;
+  }
+  
+  
+  100% {
+    margin-top: 300px;
+  }
 }
 
 .scared {
-	width: 25%;
+	width: 23%;
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	/*animation start*/
+	animation-name:scared;
+  	animation-duration:0.1s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
+}
+
+/*   add your starting state and your end state  */
+@keyframes scared {
+  
+  0% {
+  	margin-left: -4px;
+  }
+  
+  
+  100% {
+    margin-left: 4px;
+  }
 }
 
 .confused {
@@ -878,12 +916,158 @@ a {
 	align-items: center;
 	justify-content: center;
 	display: flex;
+	/*animation start*/
+	animation-name:confused;
+  	animation-duration:3s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
 }
 
+/*   add your starting state and your end state  */
+@keyframes confused {
+  
+  0% {
+  	transform: rotate(360deg);
+  }
+  
+  
+  100% {
+  }
+}
 
 /*FACES END*/
 
+/*HTTPS START*/
 
+.http-content {
+	border: 8px solid black;
+	border-radius: 500px;
+	font-family: arial black;
+	color: black;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	background-image: radial-gradient(red, orange, yellow);
+}
+
+.http-text {
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.h {
+	width: 15%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 200px;
+	animation-name: stretch;
+  	animation-duration:3s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
+}
+
+@keyframes stretch {
+ 	from {
+ 		-webkit-transform:scale(1,1);
+ 	}
+
+ 	to {
+ 		-webkit-transform:scale(3,1); /* Safari and Chrome */
+ 	}
+ 	
+  }
+
+
+.t {
+	font-family: arial;
+	width: 10%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 200px;
+	animation-name: stretch-one;
+  	animation-duration:1s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
+}
+
+@keyframes stretch-one {
+ 	from {
+ 		-webkit-transform:scale(0.5,1);
+ 	}
+
+ 	to {
+ 		-webkit-transform:scale(1,1); /* Safari and Chrome */
+ 	}
+ 	
+  }
+
+  .t2 {
+	width: 15%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 200px;
+	animation-name: stretch-two;
+  	animation-duration:5s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
+}
+
+@keyframes stretch-two {
+ 	from {
+ 		-webkit-transform:scale(1,1);
+ 	}
+
+ 	to {
+ 		-webkit-transform:scale(3,1); /* Safari and Chrome */
+ 	}
+ 	
+  }
+
+
+  .p {
+  	font-family: arial;
+	width: 15%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 200px;
+	animation-name: stretch-three;
+  	animation-duration:4s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out; 
+  	animation-direction: alternate-reverse;
+}
+
+@keyframes stretch-three {
+ 	from {
+ 		-webkit-transform:scale(0.5,1);
+ 	}
+
+ 	to {
+ 		-webkit-transform:scale(2,1); /* Safari and Chrome */
+ 	}
+ 	
+  }
+
+/*HTTP END*/
 
 
 
