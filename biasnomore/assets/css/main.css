@@ -14,8 +14,25 @@ a {
 
 /*OPEN START*/
 
+#opening {
+	position: fixed;
+	overflow: scroll;
+	font-size: 4.5vh;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #0210d4;
+	color: white;
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+    z-index: 2;
+}
 
-
+.opening-name {
+	padding: 10px;
+}
 
 /*OPEN END*/
 
