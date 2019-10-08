@@ -138,6 +138,26 @@ a {
 	width: 90%;
 }
 
+/*POPUP START*/
+
+.popup {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	background-color: blue;
+	font-family: 'monument_extendedregular';
+    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
+    position: fixed;
+}
+
+
+.popup-content {
+	color: white;
+}
+
+/*POPUP END*/
+
 /*HOME END*/
 
 /*ABOUT START*/
