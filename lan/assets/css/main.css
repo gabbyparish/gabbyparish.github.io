@@ -1,0 +1,37 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+a {
+	color:red;
+}
+
+/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
+
+/* EXAMPLE CODE PLEASE REMOVE */
+
+.main {
+	border: 2px solid black;
+	padding: 20px;
+	margin-top:100px;
+	margin-bottom:100px;
+	width:500px;
+}
+
+.block {
+	display: inline-block;
+	padding: 20px;
+	width:200px;
+	background-color:black;
+	color:#fff;
+}
+
+.centerblock {
+	width:500px;
+	margin: auto;
+}
+
+.centerblock img {
+	width: 100%;
+}
