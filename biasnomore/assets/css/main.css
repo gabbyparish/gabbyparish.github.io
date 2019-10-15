@@ -284,7 +284,40 @@ a {
 /*CENTRAL PARK 5 END*/
 
 
+/*GRAPHICS START*/
 
+.graphics img {
+	width: 100%;
+}
+
+.graphics {
+	width: 25%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	animation-name:spinUG;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    transform:rotate(0deg);
+  }
+  
+  100% {
+    transform:rotate(-360deg);
+  }
+  
+  
+}
+
+/*GRAPHICS END*/
 
 
 
