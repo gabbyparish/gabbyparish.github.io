@@ -46,6 +46,7 @@ a {
 	left: 0px;
 	background-color: #0210d4;
 	border-bottom: 2px solid black;
+	z-index: 1;
 }
 
 .nav-item {
@@ -286,21 +287,21 @@ a {
 
 /*GRAPHICS START*/
 
-.graphics img {
-	width: 100%;
+.circle-text img {
+	width: 50%;
 }
 
-.graphics {
-	width: 25%;
+.circle-text {
+	width: 33.333%;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 20px;
 	animation-name:spinUG;
   animation-duration:10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
+  z-index: -1;
 }
 
 /*   add your starting state and your end state  */
@@ -315,6 +316,18 @@ a {
   }
   
   
+}
+
+.arrow img {
+	width: 100%;
+}
+
+.arrow {
+	width: 33.333%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /*GRAPHICS END*/
