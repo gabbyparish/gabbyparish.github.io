@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'tiny_5x3140';
+    src: url('fonts/webfontkit-2/tiny5x3-140-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit-2/tiny5x3-140-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'tiny_5x3160';
+    src: url('fonts/webfontkit-2/tiny5x3-160-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit-2/tiny5x3-160-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
