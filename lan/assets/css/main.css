@@ -33,6 +33,29 @@ a {
 	color: white;
 }
 
-.banner {
-	
+.marquee {
+	overflow: hidden;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lime;
+	position: relative;
+	transform: rotate(10deg);
 }
+
+
+
+.marquee-text {
+	font-size: 25px;
+	font-family: 'pilowlavaregular';
+    src: url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff') format('woff');
+    padding: 10px;
+    margin: 0 15px;
+}
+
+
+
+
+
