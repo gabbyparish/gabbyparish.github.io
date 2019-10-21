@@ -1,7 +1,6 @@
 
-
 jQuery(document).ready(function($) {
-  $('.marquee-text').slick({
+  $('.slick.marquee').slick({
     speed: 5000,
     autoplay: true,
     autoplaySpeed: 0,
