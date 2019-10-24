@@ -295,13 +295,14 @@ a {
 	width: 33.333%;
 	height: 100vh;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	animation-name:spinUG;
-  animation-duration:10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  z-index: -1;
+  	animation-duration:10s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear; 
+  	z-index: -1;
 }
 
 /*   add your starting state and your end state  */
@@ -324,9 +325,19 @@ a {
 
 .arrow {
 	width: 33.333%;
-	height: 100vh;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+}
+
+.scales img {
+	width: 50%;
+}
+
+.scales {
+	width: 50%;
+	display: flex;
+	align-items: flex-start;
 	justify-content: center;
 }
 
