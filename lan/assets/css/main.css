@@ -2,22 +2,32 @@ body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 40px;
 	background-color: black;
+	background-image: url("bg-image/bg-image.png");
 }
 
 a {
 	color:red;
 }
 
-/* When you first edit this file, you can delete everything below here. Remember you should use body to target all elements on the page first and then override them later  */
+/*NAV START*/
 
-/* EXAMPLE CODE PLEASE REMOVE */
-
-.bg {
-	position: fixed;
+.nav {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	font-size: 30px;
+	position: fixed;
+	z-index: 1px;
 }
+
+.nav-item {
+	padding: 10px;
+	font-family: 'tiny_5x3140';
+    src: url('fonts/webfontkit-2/tiny5x3-140-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit-2/tiny5x3-140-webfont.woff') format('woff');
+	color: white;
+}
+
+/*NAV END*/
+
 
 .title {
 	height: 100vh;
