@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function($) {
   $('.slick.marquee').slick({
     speed: 5000,
@@ -13,5 +12,12 @@ jQuery(document).ready(function($) {
     initialSlide: 1,
     arrows: false,
     buttons: false
+  });
+});
+
+$('.click-about').click(function() {
+  $('.popup-about').addClass('about-item-show');
+  $('.popup-about').click(function(){
+    $(this).removeClass('about-item-show');
   });
 });

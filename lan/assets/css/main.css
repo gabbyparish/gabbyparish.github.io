@@ -36,6 +36,7 @@ a {
 	padding: 10px;
 	font-weight: bold;
 	transform: rotateY(180deg);
+	color: white;
 }
 
 .nav-item:hover {
@@ -72,14 +73,15 @@ a {
 
 
 
-.slick-slide {
-	font-size: 25px;
+.slick-slide .inner{
+	font-size: 15px;
 	font-family: 'pilowlavaregular';
     src: url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff2') format('woff2'),
          url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff') format('woff');
-    padding: 10px;
-    margin: 0 15px;
+    padding: 5px;
+    margin: 0 30px;
 }
+
 
 /*MAIN END*/
 
@@ -221,7 +223,7 @@ a {
 
 /*ABOUT START*/
 
-.about {
+.popup-about {
 	padding: 200px;
 }
 
@@ -235,7 +237,11 @@ a {
     background-color: yellow;
     box-shadow:0px 0px 60px 20px yellow;
     display: none;
-  
+    position: fixed;
+}
+
+.about-item-show {
+	display: block;
 }
 
 /*ABOUT END*/
