@@ -35,6 +35,11 @@ a {
 	display: inline-block;
 	padding: 10px;
 	font-weight: bold;
+	transform: rotateY(180deg);
+}
+
+.nav-item:hover {
+	transform: rotateY(0deg);
 }
 
 /*NAV END*/
@@ -86,9 +91,10 @@ a {
 }
 
 .arc-title {
-    font-size: 10vw;
+    font-size: 3vw;
     text-align: right;
-     -webkit-text-stroke: 1px red;
+    transform: skew(10deg) rotate(-90deg);
+    flex: 0 0 10%;
 }
 
 .archive-item {
@@ -98,8 +104,32 @@ a {
 	background-color: blue;
 }
 
+.archive-item img:hover {
+	transform: rotate(0deg);
+}
+
 .archive-item img {
 	width: 30%;
+}
+
+.bad {
+	transform: rotate(60deg);
+}
+
+.fisk {
+	transform: rotate(-20deg);
+}
+
+.koos {
+	transform: rotateY(180deg);
+}
+
+.seemayer {
+	transform: rotate(30deg);
+}
+
+.velvetyne {
+	transform: scaleY(2);
 }
 
 /*ARCHIVE END*/
