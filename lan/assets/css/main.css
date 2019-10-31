@@ -94,7 +94,15 @@ a {
     font-size: 3vw;
     text-align: right;
     transform: skew(10deg) rotate(90deg);
-    flex: 0 0 50%;
+    flex: 0 0 100%;
+    color: white;
+	mix-blend-mode: difference;
+	padding: 20px;
+	background-color: blue;
+}
+
+.arc-title:hover {
+	transform: rotate(0deg);
 }
 
 .archive-item {
@@ -111,6 +119,13 @@ a {
 
 .archive-item img {
 	width: 30%;
+}
+
+.archive-item a {
+	mix-blend-mode: difference;
+	text-decoration: none;
+	color: white;
+	cursor: zoom-in;
 }
 
 .sep {
@@ -145,6 +160,14 @@ a {
 	transform: rotateY(180deg);
 }
 
+.koos:hover {
+	transform: rotateY(0deg);
+}
+
+.koos a {
+	margin-top: 0px;
+}
+
 .seemayer {
 	transform: rotate(30deg);
 	font-family: 'pilowlavaregular';
@@ -157,6 +180,10 @@ a {
 }
 
 .velvetyne {
+	transform: scaleY(1);
+}
+
+.velvetyne:hover {
 	transform: scaleY(2);
 }
 
@@ -183,11 +210,11 @@ a {
 }
 
 .feixen{
-	transform: rotate(-90deg);
+	transform: scaleX(2);
 }
 
 .feixen:hover{
-	transform: rotate(0deg);
+	transform: scaleX(1);
 }
 
 /*ARCHIVE END*/
