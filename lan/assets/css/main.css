@@ -126,11 +126,19 @@ a {
          url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff') format('woff');
 }
 
+.bad:hover {
+	transform: rotate(0deg);
+}
+
 .fisk {
 	font-family: 'pilowlavaregular';
     src: url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff2') format('woff2'),
          url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff') format('woff');
 	transform: rotate(-20deg);
+}
+
+.fisk:hover {
+	transform: rotate(0deg);
 }
 
 .koos {
@@ -142,6 +150,10 @@ a {
 	font-family: 'pilowlavaregular';
     src: url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff2') format('woff2'),
          url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff') format('woff');
+}
+
+.seemayer:hover {
+	transform: rotate(0deg);
 }
 
 .velvetyne {
