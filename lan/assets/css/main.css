@@ -60,7 +60,8 @@ a {
 	color: white;
 }
 
-.marquee {
+.marquee3k {
+	padding: 6px;
 	margin-top: 400px;
 	overflow: hidden;
 	width: 100vw;
@@ -71,17 +72,12 @@ a {
 	align-items: center;
 }
 
-
-
-.slick-slide .inner{
-	font-size: 15px;
+.copy {
+	padding: 5px;
 	font-family: 'pilowlavaregular';
     src: url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff2') format('woff2'),
          url('fonts/webfontkit-pilowlava/pilowlava-regular-webfont.woff') format('woff');
-    padding: 5px;
-    margin: 0 30px;
 }
-
 
 /*MAIN END*/
 
@@ -224,20 +220,21 @@ a {
 /*ABOUT START*/
 
 .popup-about {
-	padding: 200px;
-}
-
-.about-item {
-	height: 50%;
-	font-family: 'terminal_grotesque_openopen';
+	height: 20%;
+	position: fixed;
+	top:0px;
+	left:0px;
+	display: none;
+		font-family: 'terminal_grotesque_openopen';
     src: url('fonts/webfontkit-terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
          url('fonts/webfontkit-terminal/terminal-grotesque_open-webfont.woff') format('woff');
     mix-blend-mode: difference;
     padding: 30px;
     background-color: yellow;
     box-shadow:0px 0px 60px 20px yellow;
-    display: none;
-    position: fixed;
+    cursor: pointer;
+    overflow: scroll;
+    z-index: 99;
 }
 
 .about-item-show {

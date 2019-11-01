@@ -1,23 +1,16 @@
-jQuery(document).ready(function($) {
-  $('.slick.marquee').slick({
-    speed: 5000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    centerMode: true,
-    cssEase: 'linear',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-    infinite: true,
-    initialSlide: 1,
-    arrows: false,
-    buttons: false
-  });
-});
+$( document ).ready(function() {
+console.log("Hello world!");
+
+Marquee3k.init();
+
+
 
 $('.click-about').click(function() {
-  $('.popup-about').addClass('about-item-show');
-  $('.popup-about').click(function(){
-    $(this).removeClass('about-item-show');
-  });
+	$('.popup-about').addClass('about-item-show');
+	$('.popup-about').click(function() {
+		$(this).removeClass('about-item-show');
+	});
+});
+
+
 });
