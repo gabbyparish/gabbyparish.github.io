@@ -288,9 +288,7 @@ a {
 /*GRAPHICS START*/
 
 .graphics-content {
-	width: 125%;
-	margin-top: 55px;
-	margin-left: 5px;
+	width: 100%;
 }
 
 /*GRAPHICS END*/
