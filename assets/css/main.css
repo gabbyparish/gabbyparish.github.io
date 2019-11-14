@@ -56,6 +56,7 @@ a {
 	top: 0px;
 	mix-blend-mode: difference;
 	align-items: center;
+	z-index: 1;
 }
 
 .nav-item {
@@ -78,8 +79,12 @@ a {
 }
 
 .nav-item img {
-	height: 5vh;
+	height: 11vh;
 	padding: 0px;
+}
+
+.logo {
+	padding: 5px;
 }
 
 /*NAV END*/
@@ -101,10 +106,11 @@ a {
 }
 
 .research-item {
-	flex: 0 0 25%;
+	flex: 0 0 50%;
 	padding: 10px;
 	transition: 1s;
 	cursor: zoom-in;
+	z-index: 0;
 }
 
 .research-item img {
