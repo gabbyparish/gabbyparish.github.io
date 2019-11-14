@@ -55,12 +55,13 @@ a {
 	flex-wrap: wrap;
 	top: 0px;
 	mix-blend-mode: difference;
+	align-items: center;
 }
 
 .nav-item {
 	color: black;
 	padding: 20px;
-	font-size: 25px;
+	font-size: 15px;
 	font-family: 'gosha_sansregular';
     src: url('fonts/gosha/goshasans-regular-webfont.woff2') format('woff2'),
          url('fonts/gosha/goshasans-regular-webfont.woff') format('woff');
@@ -69,13 +70,16 @@ a {
 .nav-item:hover {
 	color: #00ff00;
 	background-color: black;
-	font-style: italic;
-	-webkit-text-stroke: 1px black;
 }
 
 .nav-item a {
 	color: black;
 	text-decoration: none;
+}
+
+.nav-item img {
+	height: 5vh;
+	padding: 0px;
 }
 
 /*NAV END*/
