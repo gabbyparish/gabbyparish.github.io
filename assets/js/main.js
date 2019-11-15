@@ -58,58 +58,63 @@ $(document).ready(function(){
 
 $( document ).ready(function() {
 
-
 // start shape popup
-$('.l-1').click(function() {
-  $('.i-1').addClass('show');
+$('.about').click(function() {
+  $('.about-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.l-2').click(function() {
-  $('.i-2').addClass('show');
+$('.btr').click(function() {
+  $('.btr-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.l-3').click(function() {
-  $('.i-3').addClass('show');
+$('.bnm').click(function() {
+  $('.bnm-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.l-4').click(function() {
-  $('.i-4').addClass('show');
+$('.lgbt').click(function() {
+  $('.lgbt-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.l-5').click(function() {
-  $('.i-5').addClass('show');
+$('.rad').click(function() {
+  $('.rad-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.l-6').click(function() {
-  $('.i-6').addClass('show');
+$('.geo').click(function() {
+  $('.geo-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.l-7').click(function() {
-  $('.i-7').addClass('show');
+$('.tg').click(function() {
+  $('.tg-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.l-8').click(function() {
-  $('.i-8').addClass('show');
+$('.mada').click(function() {
+  $('.mada-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.l-9').click(function() {
-  $('.i-9').addClass('show');
+$('.fs').click(function() {
+  $('.fs-box').addClass('show');
+});
+// end shape popup
+
+// start shape popup
+$('.posca').click(function() {
+  $('.posca-box').addClass('show');
 });
 // end shape popup
 
@@ -168,7 +173,7 @@ $('.l-18').click(function() {
 // end shape popup
 
 // CLOSE ANY OPEN SHAPE
-$('.image').click(function() {
+$('.boxes').click(function() {
   $(this).removeClass('show');
 });
 // CLOSE ANY OPEN SHAPE

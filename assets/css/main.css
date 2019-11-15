@@ -43,6 +43,15 @@ a {
 
 }
 
+@font-face {
+    font-family: 'terminal_grotesque_openopen';
+    src: url('fonts/terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
+         url('fonts/terminal/terminal-grotesque_open-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*FONTS END*/
 
 /*NAV START*/
@@ -89,11 +98,65 @@ a {
 
 /*NAV END*/
 
-/*MAIN START*/
+/*BOXES START*/
 
-/**/
+.boxes {
+	position: fixed;
+	cursor: pointer;
+	display: none;
+	z-index: 2;
+	font-family: 'terminal_grotesque_openopen';
+    src: url('fonts/terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
+         url('fonts/terminal/terminal-grotesque_open-webfont.woff') format('woff');
+    font-size: 20px;
+}
 
-/*MAIN END*/
+
+
+/*BOXES END*/
+
+/*ABOUT START*/
+
+.about-box {
+	top: 100px;
+	left: 280px;
+	background-color: black;
+	width: 70vw;
+	height: 70vh;
+	color: white;
+
+}
+
+.about-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.about-item {
+	padding: 15px;
+	flex: 0 0 50%;
+}
+
+.about-item img{
+	width: 100%;
+}
+
+.about-item p {
+	padding-bottom: 15px;
+}
+
+.about-item a {
+	text-decoration: none;
+	color: white;
+	border: 1px solid lime;
+	border-radius: 2px;
+}
+
+
+
+/*ABOUT END*/
+
 
 
 /*PROJECTS START*/
@@ -147,117 +210,4 @@ a {
 	display: block;
 }
 
-/*PROJECTS END*/
 
-/*SOCIAL START*/
-
-
-
-/*SOCIAL END*/
-
-/*.projects {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
-.project-title {
-	margin-top: 100px;
-	padding: 20px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size:10vh;
-	font-family: 'le_murmure_regularregular';
-    src: url('fonts/le-murmure/le_murmure-regular_web-webfont.woff2') format('woff2'),
-         url('fonts/le-murmure/le_murmure-regular_web-webfont.woff') format('woff');
-}
-
-.projects-text {
-	color: black;
-	font-size: 3vh;
-	padding: 50px;
-	font-family: helvetica;
-	background-color: yellow;
-	border: 3px solid black;
-}
-
-.projects-text p {
-	border: 3px solid black;
-	padding: 5px;
-}
-
-.projects-text :hover a {
-	background-color: black;
-	color: white;
-}
-
-.projects a {
-	color: black;
-	text-decoration: none;
-}*/
-
-/*.content {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.circle {
-	width: 50%;
-	height: 100vh;
-	background-color: blue;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 1050px;
-	border: 3px solid black;
-}
-
-.circle-text {
-	font-family: 'le_murmure_regularregular';
-    src: url('fonts/le-murmure/le_murmure-regular_web-webfont.woff2') format('woff2'),
-         url('fonts/le-murmure/le_murmure-regular_web-webfont.woff') format('woff');
-	color: white;
-	font-size: 6vw;
-	padding: 50px;
-}
-
-.square {
-	width: 50%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-left: 3px solid black;
-}
-
-.square-text {
-	color: black;
-	font-size: 3vh;
-	padding: 50px;
-	font-family: helvetica;
-	background-color: yellow;
-	border-top: 3px solid black;
-	border-bottom: 3px solid black;
-}
-
-.square-text p {
-	border: 3px solid black;
-	padding: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-*/
