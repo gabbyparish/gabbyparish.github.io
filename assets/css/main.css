@@ -136,6 +136,15 @@ a {
 	padding: 5px;
 	border-radius: 5px;
 	color: black;
+	font-size: 10px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
 }
 
 /*PROJECTS END*/
