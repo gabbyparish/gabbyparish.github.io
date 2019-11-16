@@ -290,8 +290,8 @@ a {
 .graphics {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 100px;
-	padding: 20px;
+	margin-top: 50px;
+	padding: 30px;
 }
 
 .graphics-item {
@@ -310,7 +310,29 @@ a {
 
 .circle {
 	flex: 0 0 25%;
+	justify-content: center;
+	  /*   add your animation name and settings here */
+  animation-name:spinUG;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
 }
+
+/*   add your starting state and your end state  */
+@keyframes spinUG {
+  
+  0% {
+    transform:rotate(0deg);
+  }
+  
+  100% {
+    transform:rotate(360deg);
+  }
+  
+  
+}
+
+
 
 .blank {
 	flex: 0 0 10%;
@@ -318,16 +340,23 @@ a {
 
 
 .scale {
-	flex: 0 0 45%;
-	alignment-baseline: baseline;
+	flex: 0 0 25%;
+	align-self: center;
+	justify-content: center;
+	padding: 0px;
 }
 
 .scale video {
-	width: 60%;
+	width: 100%;
 }
 
 .eye {
 	flex: 0 0 50%;
+	align-self: center;
+}
+
+.arrow {
+	padding: 5px;
 }
 
 
