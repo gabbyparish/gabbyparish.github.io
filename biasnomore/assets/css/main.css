@@ -293,6 +293,20 @@ a {
 
 /*GRAPHICS END*/
 
+#videosList {
+ max-width: 600px; 
+  overflow: hidden;
+}
+
+.video {
+  background-image: url('assets/images/representation.png');
+  height: 100%;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
 
 
 
