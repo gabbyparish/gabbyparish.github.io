@@ -316,6 +316,7 @@ a {
   animation-duration:10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
+  animation-direction: reverse;
 }
 
 /*   add your starting state and your end state  */
@@ -377,6 +378,7 @@ a {
 	position: fixed;
 	cursor: pointer;
 	display: none;
+	z-index: 2;
 	font-family: 'terminal_grotesque_openopen';
     src: url('fonts/terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
          url('fonts/terminal/terminal-grotesque_open-webfont.woff') format('woff');

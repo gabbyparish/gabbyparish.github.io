@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'terminal_grotesque_openopen';
-    src: url('terminal-grotesque_open-webfont.woff2') format('woff2'),
-         url('terminal-grotesque_open-webfont.woff') format('woff');
+    src: url('fonts/terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
+         url('fonts/terminal/terminal-grotesque_open-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
