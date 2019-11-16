@@ -109,6 +109,7 @@ a {
     src: url('fonts/terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
          url('fonts/terminal/terminal-grotesque_open-webfont.woff') format('woff');
     font-size: 20px;
+    overflow: scroll;
 }
 
 
@@ -153,11 +154,44 @@ a {
 	border-radius: 2px;
 }
 
-
-
 /*ABOUT END*/
 
+/*BTR START*/
 
+.btr-box {
+	top: 100px;
+	left: 280px;
+	background-color: black;
+	width: 70vw;
+	color: white;
+}
+
+.btr-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.btr-item {
+	padding: 15px;
+	flex: 0 0 50%;
+}
+
+.btr-item p {
+	padding-bottom: 15px;
+}
+
+.btr-item img{
+	width: 100%;
+}
+
+.btr-item img:hover {
+	transform: scale(1.05);
+}
+
+
+/*BTR-END*/
 
 /*PROJECTS START*/
 
