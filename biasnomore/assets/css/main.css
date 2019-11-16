@@ -287,27 +287,42 @@ a {
 
 /*GRAPHICS START*/
 
-.graphics-content {
-	width: 50vw;
-	height: 50vh;
+.graphics {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	padding: 20px;
+
 }
+
+.graphics-item {
+	flex: 0 0 25%;
+	padding: 20px;
+	
+}
+
+.graphics-item img {
+	width: 100%;
+}
+
+.graphics-item video {
+	width: 100%;
+}
+
+.circle {
+	padding-right: 40px;
+}
+
+.scale {
+	align-self: flex-end;
+	padding: 0px;
+}
+
+
 
 /*GRAPHICS END*/
 
-#videosList {
- max-width: 600px; 
-  overflow: hidden;
-}
 
-.video {
-  background-image: url('assets/images/representation.png');
-  height: 100%;
-}
-
-/* Hide Play button + controls on iOS */
-video::-webkit-media-controls {
-    display:none !important;
-}
 
 
 
