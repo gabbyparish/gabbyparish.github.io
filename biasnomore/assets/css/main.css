@@ -292,7 +292,6 @@ a {
 	flex-wrap: wrap;
 	margin-top: 100px;
 	padding: 20px;
-
 }
 
 .graphics-item {
@@ -310,12 +309,25 @@ a {
 }
 
 .circle {
-	padding-right: 40px;
+	flex: 0 0 25%;
 }
 
+.blank {
+	flex: 0 0 10%;
+}
+
+
 .scale {
-	align-self: flex-end;
-	padding: 0px;
+	flex: 0 0 45%;
+	alignment-baseline: baseline;
+}
+
+.scale video {
+	width: 60%;
+}
+
+.eye {
+	flex: 0 0 50%;
 }
 
 
