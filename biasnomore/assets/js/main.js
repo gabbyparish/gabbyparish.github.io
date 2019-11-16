@@ -17,32 +17,32 @@ $('.rep').click(function() {
 // end shape popup
 
 // start shape popup
-$('.bnm').click(function() {
-  $('.bnm-box').addClass('show');
+$('.scale').click(function() {
+  $('.scale-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.lgbt').click(function() {
-  $('.lgbt-box').addClass('show');
+$('.language').click(function() {
+  $('.language-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.rad').click(function() {
-  $('.rad-box').addClass('show');
+$('.dna').click(function() {
+  $('.dna-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.geo').click(function() {
-  $('.geo-box').addClass('show');
+$('.eye').click(function() {
+  $('.eye-box').addClass('show');
 });
 // end shape popup
 
 // start shape popup
-$('.tg').click(function() {
-  $('.tg-box').addClass('show');
+$('.penalty').click(function() {
+  $('.penalty-box').addClass('show');
 });
 // end shape popup
 
