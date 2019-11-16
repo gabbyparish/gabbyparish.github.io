@@ -288,7 +288,8 @@ a {
 /*GRAPHICS START*/
 
 .graphics-content {
-	width: 50%;
+	width: 50vw;
+	height: 50vh;
 }
 
 /*GRAPHICS END*/
