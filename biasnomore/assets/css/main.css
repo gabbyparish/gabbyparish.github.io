@@ -361,7 +361,6 @@ a {
 	z-index: 2;
     font-size: 13px;
     overflow: scroll;
-   
 }
 
 .boxes-title {
@@ -437,9 +436,12 @@ a {
 	left: 280px;
 	background-color: white;
 	width: 70vw;
-	display: block;
+	height: 70%;
+	display: none;
 	border: 2px solid #0210d4;
+	overflow: scroll;
 }
+
 
 .dna-content {
 	display: flex;
