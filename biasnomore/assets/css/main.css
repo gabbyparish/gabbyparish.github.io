@@ -466,6 +466,61 @@ a {
 	font-size: 10px;
 }
 
+.language-box {
+	display: none;
+	top: 100px;
+	left: 280px;
+	background-color: white;
+	width: 70vw;
+	border: 2px solid #0210d4;
+}
+
+.language-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.language-item {
+	padding: 15px;
+	flex: 0 0 50%;
+}
+
+.language-item img{
+	width: 100%;
+}
+
+.language-item p {
+	padding-bottom: 15px;
+}
+
+.eye-box {
+	display: none;
+	top: 100px;
+	left: 280px;
+	background-color: white;
+	width: 70vw;
+	border: 2px solid #0210d4;
+}
+
+.eye-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.eye-item {
+	padding: 15px;
+	flex: 0 0 50%;
+}
+
+.eye-item img{
+	width: 100%;
+}
+
+.eye-item p {
+	padding-bottom: 15px;
+}
 /*BOXES END*/
 
 
