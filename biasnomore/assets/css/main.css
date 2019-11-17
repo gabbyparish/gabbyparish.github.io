@@ -523,6 +523,7 @@ a {
 }
 
 .penalty-box {
+	display: none;
 	top: 100px;
 	left: 280px;
 	background-color: white;
