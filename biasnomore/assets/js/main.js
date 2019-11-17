@@ -15,13 +15,14 @@ $(document).ready(function(){
 
   //toggle filtered items
 
-
+});
 
 // POPUPS
 
   // popup link 
 
 $( document ).ready(function() {
+  console.log("helloooooo");
 
 // start shape popup
 $('.about').click(function() {
@@ -73,5 +74,5 @@ $('.boxes').click(function() {
 
 });
 
-});
+
 
