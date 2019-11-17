@@ -521,6 +521,34 @@ a {
 .eye-item p {
 	padding-bottom: 15px;
 }
+
+.penalty-box {
+	
+	top: 100px;
+	left: 280px;
+	background-color: white;
+	width: 70vw;
+	border: 2px solid #0210d4;
+}
+
+.penalty-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.penalty-item {
+	padding: 15px;
+	flex: 0 0 50%;
+}
+
+.penalty-item img{
+	width: 100%;
+}
+
+.penalty-item p {
+	padding-bottom: 15px;
+}
 /*BOXES END*/
 
 
