@@ -355,13 +355,44 @@ a {
 	display: block;
 }
 
+.rep-box.show {
+	display: block;
+	z-index: 200;
+}
+
+.scale-box.show {
+	display: block;
+	z-index: 200;
+}
+
+.language-box.show {
+	display: block;
+	z-index: 200;
+}
+
+.dna-box.show {
+	display: block;
+	z-index: 200;
+}
+
+.eye-box.show {
+	display: block;
+	z-index: 200;
+}
+
+.penalty-box.show {
+	display: block;
+	z-index: 200;
+}
+
 .boxes {
 	display: none;
-	position: absolute;
+	position: fixed;
 	cursor: pointer;
-	z-index: 2;
+	z-index: 200;
     font-size: 13px;
     overflow: scroll;
+
 }
 
 .boxes-title {
@@ -377,10 +408,11 @@ a {
 
 
 .rep-box {
-	display: none;
+	/*display: none;*/
 	top: 100px;
 	left: 280px;
 	background-color: white;
+	border: solid 1px black;
 	width: 70vw;
 	border: 2px solid #0210d4;
 }
@@ -405,12 +437,13 @@ a {
 }
 
 .scale-box {
+	/*display: none;*/
 	top: 100px;
 	left: 280px;
-	background-color: white;
+	border: solid 1px black;
 	width: 70vw;
-	display: block;
 	border: 2px solid #0210d4;
+	background-color: white;
 }
 
 .scale-content {
@@ -431,6 +464,8 @@ a {
 .scale-item p {
 	padding-bottom: 15px;
 }
+
+
 
 .dna-box {
 	top: 100px;
@@ -468,7 +503,6 @@ a {
 }
 
 .language-box {
-	display: none;
 	top: 100px;
 	left: 280px;
 	background-color: white;
@@ -496,7 +530,6 @@ a {
 }
 
 .eye-box {
-	display: none;
 	top: 100px;
 	left: 280px;
 	background-color: white;
@@ -524,7 +557,6 @@ a {
 }
 
 .penalty-box {
-	display: none;
 	top: 100px;
 	left: 280px;
 	background-color: white;
