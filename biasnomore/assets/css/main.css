@@ -139,26 +139,6 @@ a {
 	width: 90%;
 }
 
-/*POPUP START*/
-
-.popup {
-	display: flex;
-	flex-wrap: wrap;
-	width: 50%;
-	background-color: blue;
-	font-family: 'monument_extendedregular';
-    src: url('fonts/webfontkit2/monumentextended-regular-webfont.woff2') format('woff2'),
-         url('fonts/webfontkit2/monumentextended-regular-webfont.woff') format('woff');
-    position: fixed;
-}
-
-
-.popup-content {
-	color: white;
-}
-
-/*POPUP END*/
-
 /*HOME END*/
 
 /*ABOUT START*/
@@ -362,6 +342,7 @@ a {
 	padding: 5px;
 }
 
+
 /*GRAPHICS END*/
 
 /*BOXES START*/
@@ -375,10 +356,10 @@ a {
 }
 
 .boxes {
-	position: fixed;
+	position: absolute;
 	cursor: pointer;
-	display: none;
 	z-index: 2;
+	display: none;
 	font-family: 'terminal_grotesque_openopen';
     src: url('fonts/terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
          url('fonts/terminal/terminal-grotesque_open-webfont.woff') format('woff');
@@ -396,9 +377,19 @@ a {
 	color: white;
 }
 
+.rep-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 .rep-item {
 	padding: 15px;
 	flex: 0 0 50%;
+}
+
+.rep-item img{
+	width: 100%;
 }
 
 .rep-item p {

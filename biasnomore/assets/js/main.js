@@ -10,46 +10,12 @@ $(document).ready(function(){
   });
 
   var hideAll = function() {
-    $('.research-item') .addClass('hide');
+    $('.graphics-item') .addClass('hide');
   }
 
   //toggle filtered items
 
-  $('.btn-web').click(function(){
-    hideAll(); 
-    $('.web').removeClass('hide');
-  });
 
-  $('.btn-posters').click(function(){
-    hideAll();
-    $('.posters').removeClass('hide')
-  });
-
-  $('.btn-id').click(function(){
-    hideAll();
-    $('.id').removeClass('hide')
-  });
-
-  $('.btn-print').click(function(){
-    hideAll();
-    $('.print').removeClass('hide')
-  });
-
-  $('.btn-illo').click(function(){
-    hideAll();
-    $('.illo').removeClass('hide')
-  });
-
-  $('.btn-pub').click(function(){
-    hideAll();
-    $('.pub').removeClass('hide')
-  });
-
-  $('.btn-all').click(function(){
-    $('.research-item').removeClass('hide');
-  });
-
-  
 
 // POPUPS
 
