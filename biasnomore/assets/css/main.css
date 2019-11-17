@@ -361,10 +361,11 @@ a {
 	z-index: 2;
     font-size: 13px;
     overflow: scroll;
-    display: none;
+   
 }
 
 .boxes-title {
+
 	font-family: 'monument_extendedultrabold';
     src: url('fonts/webfontkit1/monumentextended-ultrabold-webfont.woff2') format('woff2'),
          url('fonts/webfontkit1/monumentextended-ultrabold-webfont.woff') format('woff');
@@ -376,11 +377,11 @@ a {
 
 
 .rep-box {
+	display: none;
 	top: 100px;
 	left: 280px;
 	background-color: white;
 	width: 70vw;
-	
 	border: 2px solid #0210d4;
 }
 
@@ -429,6 +430,38 @@ a {
 
 .scale-item p {
 	padding-bottom: 15px;
+}
+
+.dna-box {
+	top: 100px;
+	left: 280px;
+	background-color: white;
+	width: 70vw;
+	display: block;
+	border: 2px solid #0210d4;
+}
+
+.dna-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.dna-item {
+	padding: 15px;
+	flex: 0 0 50%;
+}
+
+.dna-item img{
+	width: 100%;
+}
+
+.dna-item p {
+	padding-bottom: 15px;
+}
+
+.caption {
+	font-size: 10px;
 }
 
 /*BOXES END*/
