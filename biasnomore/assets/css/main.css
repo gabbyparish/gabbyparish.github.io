@@ -359,22 +359,29 @@ a {
 	position: absolute;
 	cursor: pointer;
 	z-index: 2;
-	display: none;
-	font-family: 'terminal_grotesque_openopen';
-    src: url('fonts/terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
-         url('fonts/terminal/terminal-grotesque_open-webfont.woff') format('woff');
-    font-size: 20px;
+    font-size: 13px;
     overflow: scroll;
+    display: none;
+}
+
+.boxes-title {
+	font-family: 'monument_extendedultrabold';
+    src: url('fonts/webfontkit1/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+         url('fonts/webfontkit1/monumentextended-ultrabold-webfont.woff') format('woff');
+    font-size: 35px;
+    flex: 0 0 100%;
+    padding-bottom: 10px;
+    color: #0210d4;
 }
 
 
 .rep-box {
 	top: 100px;
 	left: 280px;
-	background-color: black;
+	background-color: white;
 	width: 70vw;
-	height: 70vh;
-	color: white;
+	
+	border: 2px solid #0210d4;
 }
 
 .rep-content {
@@ -393,6 +400,34 @@ a {
 }
 
 .rep-item p {
+	padding-bottom: 15px;
+}
+
+.scale-box {
+	top: 100px;
+	left: 280px;
+	background-color: white;
+	width: 70vw;
+	display: block;
+	border: 2px solid #0210d4;
+}
+
+.scale-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.scale-item {
+	padding: 15px;
+	flex: 0 0 50%;
+}
+
+.scale-item img{
+	width: 100%;
+}
+
+.scale-item p {
 	padding-bottom: 15px;
 }
 
