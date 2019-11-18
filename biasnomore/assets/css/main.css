@@ -401,7 +401,6 @@ a {
 }
 
 .boxes-title {
-
 	font-family: 'monument_extendedultrabold';
     src: url('fonts/webfontkit1/monumentextended-ultrabold-webfont.woff2') format('woff2'),
          url('fonts/webfontkit1/monumentextended-ultrabold-webfont.woff') format('woff');
@@ -414,8 +413,8 @@ a {
 
 .rep-box {
 	/*display: none;*/
-	top: 100px;
-	left: 280px;
+	top: 25%;
+	left: 25%;
 	background-color: white;
 	border: solid 1px black;
 	width: 70vw;
@@ -443,8 +442,8 @@ a {
 
 .scale-box {
 	/*display: none;*/
-	top: 100px;
-	left: 280px;
+	top: 25%;
+	left: 25%;
 	border: solid 1px black;
 	width: 70vw;
 	border: 2px solid #0210d4;
@@ -473,8 +472,8 @@ a {
 
 
 .dna-box {
-	top: 100px;
-	left: 280px;
+	top: 25%;
+	left: 25%;
 	background-color: white;
 	width: 70vw;
 	height: 70%;
@@ -508,8 +507,8 @@ a {
 }
 
 .language-box {
-	top: 100px;
-	left: 280px;
+	top: 25%;
+	left: 25%;
 	background-color: white;
 	width: 70vw;
 	border: 2px solid #0210d4;
@@ -535,8 +534,8 @@ a {
 }
 
 .eye-box {
-	top: 100px;
-	left: 280px;
+	top: 25%;
+	left: 25%;
 	background-color: white;
 	width: 70vw;
 	border: 2px solid #0210d4;
@@ -562,8 +561,8 @@ a {
 }
 
 .penalty-box {
-	top: 100px;
-	left: 280px;
+	top: 25%;
+	left: 25%;
 	background-color: white;
 	width: 70vw;
 	border: 2px solid #0210d4;
