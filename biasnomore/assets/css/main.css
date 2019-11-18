@@ -413,8 +413,8 @@ a {
 
 .rep-box {
 	/*display: none;*/
-	top: 25%;
-	left: 25%;
+	top: 15%;
+	left: 15%;
 	background-color: white;
 	border: solid 1px black;
 	width: 70vw;
@@ -442,8 +442,8 @@ a {
 
 .scale-box {
 	/*display: none;*/
-	top: 25%;
-	left: 25%;
+	top: 15%;
+	left: 15%;
 	border: solid 1px black;
 	width: 70vw;
 	border: 2px solid #0210d4;
@@ -472,8 +472,8 @@ a {
 
 
 .dna-box {
-	top: 25%;
-	left: 25%;
+	top: 15%;
+	left: 15%;
 	background-color: white;
 	width: 70vw;
 	height: 70%;
@@ -507,8 +507,8 @@ a {
 }
 
 .language-box {
-	top: 25%;
-	left: 25%;
+	top: 15%;
+	left: 15%;
 	background-color: white;
 	width: 70vw;
 	border: 2px solid #0210d4;
@@ -534,8 +534,8 @@ a {
 }
 
 .eye-box {
-	top: 25%;
-	left: 25%;
+	top: 15%;
+	left: 15%;
 	background-color: white;
 	width: 70vw;
 	border: 2px solid #0210d4;
@@ -561,8 +561,8 @@ a {
 }
 
 .penalty-box {
-	top: 25%;
-	left: 25%;
+	top: 15%;
+	left: 15%;;
 	background-color: white;
 	width: 70vw;
 	border: 2px solid #0210d4;
@@ -589,7 +589,7 @@ a {
 
 .about-box {
 	top: 10%;
-	left: 25%;
+	left: 15%;
 	background-color: white;
 	width: 50vw;
 	border: 2px solid #0210d4;
