@@ -385,6 +385,11 @@ a {
 	z-index: 200;
 }
 
+.about-box.show {
+	display: block;
+	z-index: 200;
+}
+
 .boxes {
 	display: none;
 	position: fixed;
@@ -580,6 +585,33 @@ a {
 }
 
 .penalty-item p {
+	padding-bottom: 15px;
+}
+
+.about-box {
+	top: 10%;
+	left: 25%;
+	background-color: white;
+	width: 50vw;
+	border: 2px solid #0210d4;
+}
+
+.about-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.about-item {
+	padding: 15px;
+	flex: 0 0 100%;
+}
+
+.about-item img{
+	width: 100%;
+}
+
+.about-item p {
 	padding-bottom: 15px;
 }
 /*BOXES END*/
