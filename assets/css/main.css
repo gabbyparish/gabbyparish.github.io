@@ -110,7 +110,7 @@ a {
 	font-family: 'terminal_grotesque_openopen';
     src: url('fonts/terminal/terminal-grotesque_open-webfont.woff2') format('woff2'),
          url('fonts/terminal/terminal-grotesque_open-webfont.woff') format('woff');
-    font-size: 20px;
+    font-size: 3vh;
     overflow: scroll;
 }
 
@@ -121,8 +121,8 @@ a {
 /*ABOUT START*/
 
 .about-box {
-	top: 100px;
-	left: 280px;
+	top: 10vw;
+	left: 15vw;
 	background-color: black;
 	width: 70vw;
 	height: 70vh;
