@@ -9,6 +9,14 @@ a {
 
 /*FONTS START*/
 
+@font-face {
+    font-family: 'freight_dispbook_sc';
+    src: url('assets/fonts/freight_webfont/freightdisp-booksc-webfont.woff2') format('woff2'),
+         url('assets/fonts/freight_webfont/freightdisp-booksc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 /*NAV START*/
@@ -27,6 +35,10 @@ a {
 	color: black;
 	padding: 1.8vw;
 	font-size: 1vw;
+	font-family: 'freight_dispbook_sc';
+    src: url('assets/fonts/freight_webfont/freightdisp-booksc-webfont.woff2') format('woff2'),
+         url('assets/fonts/freight_webfont/freightdisp-booksc-webfont.woff') format('woff');
+
 }
 
 .nav-item:hover {
@@ -160,6 +172,9 @@ a {
 	padding: 10px;
 	transition: 1s;
 	z-index: 0;
+	font-family: 'freight_dispbook_sc';
+    src: url('assets/fonts/freight_webfont/freightdisp-booksc-webfont.woff2') format('woff2'),
+         url('assets/fonts/freight_webfont/freightdisp-booksc-webfont.woff') format('woff');
 }
 
 .content-item img {
@@ -169,7 +184,7 @@ a {
 
 .content-item span {
 	color: #00ff00;
-	font-size: 12px;
+	font-size: 20px;
 }
 
 .content-item video {
