@@ -71,7 +71,7 @@ a {
 .nav-item {
 	color: black;
 	padding: 1.8vw;
-	font-size: 1vw;
+	font-size: 1.3vw;
 	font-family: 'gosha_sansregular';
     src: url('fonts/gosha/goshasans-regular-webfont.woff2') format('woff2'),
          url('fonts/gosha/goshasans-regular-webfont.woff') format('woff');
@@ -88,7 +88,7 @@ a {
 }
 
 .nav-item img {
-	height: 11vh;
+	height: 4vw;
 	padding: 0px;
 }
 
