@@ -1,0 +1,35 @@
+/*ABOUT CONTENT START*/
+body {
+	background-color: #e7ffc8;
+}
+
+.about-content {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 0.3fr 1fr 0.3fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+}
+
+#about-title h1{
+	grid-area: 1/1/2/3
+	color: black;
+	font-size: 15px;
+	align-items: center;
+	font-family: 'monument_extendedregular';
+    src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
+}
+
+#profile-pic {
+	width: 100%;
+	padding: 10px;
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+#profile-pic img{
+	width: 300px;
+	border: solid black 1px;
+}
+
+/*ABOUT CONTENT END*/
