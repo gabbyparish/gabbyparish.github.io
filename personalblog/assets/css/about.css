@@ -1,9 +1,15 @@
+video {
+	width: 100%;
+  	height: auto;
+  	border: solid black 1px;
+}
+
 /*ABOUT CONTENT START*/
 
 .about-content {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 0.3fr 1fr 0.3fr 0.2fr 1fr;
+	grid-template-rows: 0.3fr 1fr 0.3fr 1fr 1fr;
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
 	background-color: #b8c8ff;
@@ -52,6 +58,7 @@
 
 #about-work {
 	grid-area: 4/2/5/3;
+	padding: 5px;
 }
 
 #about-work h3{
@@ -64,7 +71,13 @@
          url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
 }
 
-
+#about-work p {
+	font-family: 'gtf_good_sans_trialregular';
+    src: url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff2') format('woff2'),
+         url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    padding: 5px;
+}
 
 
 #geo video {
@@ -76,7 +89,19 @@
 	grid-auto-columns: 1fr;
 	position: absolute;
 	width: 400px;
+}
+
+#caption {
+	display: flex;
+	flex: 0 0 50%;
 	border: solid black 1px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+#caption a :hover {
+	text-decoration: underline;
 }
 
 /*ABOUT CONTENT END*/
