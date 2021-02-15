@@ -9,7 +9,7 @@ video {
 .about-content {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 0.3fr 1fr 0.3fr 1fr 1fr;
+	grid-template-rows: 0.3fr 1fr 0.3fr 0.3fr ;
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
 	background-color: #b8c8ff;
