@@ -26,12 +26,12 @@ a {
 .nav {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	background-color: #e7ffc8;
 	padding: 10px;
 	position: fixed;
 	align-content: center;
-	padding-bottom: 20px;
+	margin-bottom: 14px;
 	border-bottom: 1px solid black;
 	font-family: 'monument_extendedregular';
     src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),

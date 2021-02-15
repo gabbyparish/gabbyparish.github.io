@@ -1,21 +1,26 @@
 /*ABOUT CONTENT START*/
 body {
-	background-color: #e7ffc8;
+	
 }
 
 .about-content {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 0.3fr 1fr 0.3fr;
+	grid-template-rows: 0.3fr 1fr 0.3fr 1fr;
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
+	background-color: #e7ffc8;
+}
+
+#about-title {
+	grid-area: 1/2/2/3;
+	margin-top: 110px;
 }
 
 #about-title h1{
-	grid-area: 1/1/2/3
 	color: black;
-	font-size: 15px;
-	align-items: center;
+	text-align: center;
+	font-size: 25px;
 	font-family: 'monument_extendedregular';
     src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
          url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
@@ -25,11 +30,23 @@ body {
 	width: 100%;
 	padding: 10px;
 	grid-area: 2 / 2 / 3 / 3;
+	justify-content: center;
+	align-items: center;
 }
 
 #profile-pic img{
-	width: 300px;
+	width: 400px;
 	border: solid black 1px;
+}
+
+#about-text {
+	font-size: 15px;
+	grid-area: 3/2/4/3;
+	padding: 5px;
+}
+
+#about-text p {
+	padding: 5px;
 }
 
 /*ABOUT CONTENT END*/
