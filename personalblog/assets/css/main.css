@@ -48,6 +48,7 @@ video {
 	align-content: center;
 	margin-bottom: 14px;
 	border-bottom: 1px solid black;
+	z-index: 1;
 	font-family: 'monument_extendedregular';
     src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
          url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
@@ -211,6 +212,8 @@ video {
 
 /*MEDIA QUERY 1 END*/
 
+/*MEDIA QUERY 2 START*/
+
 @media (min-width: 901px) {
 	.content {
 		display: grid;
@@ -240,8 +243,8 @@ video {
 
 	.about-content {
 		display: grid;
-		grid-template-columns: 0.3fr repeat(2, 1.5fr) 0.3fr;
-		grid-template-rows: 0.3fr 1fr 1fr;
+		grid-template-columns: 0.7fr repeat(2, 1fr) 0.7fr;
+		grid-template-rows: 0.4fr repeat(4, 1fr);
 		grid-column-gap: 5px;
 		grid-row-gap: 5px;
 	}
@@ -266,17 +269,19 @@ video {
 	}
 
 	#about-work {
-		grid-area: 3 / 1 / 4 / 4;
+		grid-area: 3 / 2 / 4 / 4;
 	}
 
 	#about-item {
-		width: 100%;
+		width: 70%;
 		display: flex;
-		flex: 50% 50% 50%;
+		flex: 0 0 50%;
 		padding: 10px;
 	}
 	/*ABOUT END*/
 }
+
+/*MEDIA QUERY 2 END*/
 
 
 
