@@ -80,16 +80,18 @@ video {
 }
 
 
-#geo video {
+#about-item {
 	grid-area: 5 / 1 / 6 / 4;
-}
-
-#geo {
 	padding: 10px;
 	grid-auto-columns: 1fr;
 	position: absolute;
 	width: 400px;
 }
+
+#geo {
+	
+}
+
 
 #caption {
 	display: flex;
