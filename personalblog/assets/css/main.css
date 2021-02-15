@@ -8,6 +8,12 @@ a {
 	text-decoration: none;
 }
 
+video {
+	width: 100%;
+  	height: auto;
+  	border: solid black 1px;
+}
+
 
 /*FONTS START*/
 
@@ -17,6 +23,15 @@ a {
          url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'gtf_good_sans_trialregular';
+    src: url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff2') format('woff2'),
+         url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /*FONTS END*/
@@ -62,7 +77,7 @@ a {
 .content {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 0.3fr 1fr 0.3fr 1fr;
+	grid-template-rows: 0.3fr 1fr 1fr 1fr;
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
 }
@@ -118,6 +133,10 @@ a {
 	font-family: 'monument_extendedregular';
     src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
          url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
+}
+
+.footer img {
+	align-content: center;
 }
 
 /*FOOTER END*/

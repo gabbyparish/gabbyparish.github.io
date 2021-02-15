@@ -1,15 +1,12 @@
 /*ABOUT CONTENT START*/
-body {
-	
-}
 
 .about-content {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 0.3fr 1fr 0.3fr 1fr;
+	grid-template-rows: 0.3fr 1fr 0.3fr 0.2fr 1fr;
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
-	background-color: #e7ffc8;
+	background-color: #b8c8ff;
 }
 
 #about-title {
@@ -40,13 +37,46 @@ body {
 }
 
 #about-text {
-	font-size: 15px;
+	font-size: 14px;
 	grid-area: 3/2/4/3;
 	padding: 5px;
+	font-family: 'gtf_good_sans_trialregular';
+    src: url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff2') format('woff2'),
+         url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff') format('woff');
+    font-weight: normal;
 }
 
 #about-text p {
 	padding: 5px;
+}
+
+#about-work {
+	grid-area: 4/2/5/3;
+}
+
+#about-work h3{
+	padding: 10px;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'monument_extendedregular';
+    src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
+}
+
+
+
+
+#geo video {
+	grid-area: 5 / 1 / 6 / 4;
+}
+
+#geo {
+	padding: 10px;
+	grid-auto-columns: 1fr;
+	position: absolute;
+	width: 400px;
+	border: solid black 1px;
 }
 
 /*ABOUT CONTENT END*/
