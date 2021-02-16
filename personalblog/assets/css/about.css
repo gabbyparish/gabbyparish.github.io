@@ -11,7 +11,7 @@ video {
 .about-content {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 0.3fr 1fr 0.3fr 0.3fr ;
+	grid-template-rows: repeat(2, 0.3fr) 0.5fr 1fr 0.8fr;
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
 	background-color: #b8c8ff;
@@ -46,7 +46,7 @@ video {
 
 #about-text {
 	font-size: 14px;
-	grid-area: 3/2/4/3;
+	grid-area: 3 / 2 / 4 / 3;
 	padding: 5px;
 	font-family: 'gtf_good_sans_trialregular';
     src: url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff2') format('woff2'),
@@ -63,7 +63,7 @@ video {
 }
 
 #about-work {
-	grid-area: 4/2/5/3;
+	grid-area: 4 / 2 / 5 / 3;
 	padding: 5px;
 }
 
@@ -87,15 +87,10 @@ video {
 
 
 #about-item {
-	grid-area: 5 / 1 / 6 / 4;
 	padding: 10px;
 	grid-auto-columns: 1fr;
 	position: absolute;
 	width: 400px;
-}
-
-#geo {
-	
 }
 
 
@@ -111,5 +106,44 @@ video {
 #caption a :hover {
 	text-decoration: underline;
 }
+
+/*SOCIAL START*/
+
+#social {
+	font-family: 'gtf_good_sans_trialregular';
+    src: url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff2') format('woff2'),
+         url('fonts/goodsansreg-webfont/gtfgoodsanstrial-regular-webfont.woff') format('woff');
+    font-weight: normal;
+	grid-area: 5 / 2 / 6 / 3;
+	padding: 5px;
+}
+
+#social figcaption {
+	font-family: 'monument_extendedregular';
+    src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
+	padding: 5px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#social-item {
+	padding: 5px;
+	border: solid black 1px;
+	margin-bottom: 5px;
+}
+
+#social-item :hover {
+	text-decoration: underline;
+}
+
+/*SOCIAL END*/
+
+
+
+
+
+
+
 
 /*ABOUT CONTENT END*/
