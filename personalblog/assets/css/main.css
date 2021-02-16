@@ -1,3 +1,7 @@
+@import "nav.css" ;
+@import "about.css" ;
+@import "footer.css" ;
+
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	background-color: #b8c8ff;
@@ -36,45 +40,6 @@ video {
 
 /*FONTS END*/
 
-/*NAV START*/
-
-.nav {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	background-color: #e7ffc8;
-	padding: 10px;
-	position: fixed;
-	align-content: center;
-	margin-bottom: 14px;
-	border-bottom: 1px solid black;
-	z-index: 1;
-	font-family: 'monument_extendedregular';
-    src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
-         url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
-}
-
-.nav p {
-	justify-content: center;
-}
-
-#home img {
-	width: 70px;
-}
-
-#about :hover {
-	color: #b8c8ff;
-}
-
-#contact :hover {
-	color: #b8c8ff;
-}
-
-#home :hover {
-	transform: scale(1.1);
-}
-
-/*NAV END*/
 
 /*CONTENT START*/
 .content {
@@ -117,29 +82,6 @@ video {
 
 /*CONTENT END*/
 
-
-/*FOOTER START*/
-
-.footer {
-	width: 100%;
-	display: flex;
-	position: fixed;
-	justify-content: center;
-	background-color: #e7ffc8;
-	align-content: center;
-	padding-top: 20px;
-	bottom: 0px;
-	border-top: 1px solid black;
-	font-family: 'monument_extendedregular';
-    src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
-         url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
-}
-
-.footer img {
-	align-content: center;
-}
-
-/*FOOTER END*/
 
 /*MEDIA QUERY 1 START*/
 

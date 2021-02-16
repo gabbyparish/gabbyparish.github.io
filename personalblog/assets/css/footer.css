@@ -1,0 +1,24 @@
+
+
+/*FOOTER START*/
+
+.footer {
+	width: 100%;
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	background-color: #e7ffc8;
+	align-content: center;
+	padding-top: 20px;
+	bottom: 0px;
+	border-top: 1px solid black;
+	font-family: 'monument_extendedregular';
+    src: url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('fonts/monument-bold-webfont/monumentextended-regular-webfont.woff') format('woff');
+}
+
+.footer img {
+	align-content: center;
+}
+
+/*FOOTER END*/
