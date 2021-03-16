@@ -66,10 +66,10 @@ function inViewport(element) {
 	var coordinate = element.getBoundingClientRect();
 
 	return (
-		distance.top >= -300 &&
-		distance.left >= 0 &&
-		distance.bottom <= (1.3 * window.innerHeight || document.documentElement.clientHeight)
-		distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+		coordinate.top >= -300 &&
+		coordinate.left >= 0 &&
+		coordinate.bottom <= (1.3 * window.innerHeight || document.documentElement.clientHeight)&&
+		coordinate.right <= (window.innerWidth || document.documentElement.clientWidth)
 	);
 };
 
@@ -133,7 +133,6 @@ window.addEventListener('scroll', function (event) {
 
 /**
  * End Main Functions
- * Begin Events
  * 
 */
 
