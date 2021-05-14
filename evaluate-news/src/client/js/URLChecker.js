@@ -9,5 +9,5 @@ function validURL(url) {
     return false;
     
  }
-export { validURL }
+export default { validURL }
 
