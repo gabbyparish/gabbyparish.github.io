@@ -2,7 +2,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 var path = require('path')
 const express = require('express')
-const bodyParser = require('body-parser')
 const fetch = require('node-fetch');
 const mockAPIResponse = require('./mockAPI.js')
 
@@ -19,6 +18,13 @@ app.use(express.json());
 app.use(express.static('dist'))
 
 console.log(__dirname)
+
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+    console.log('access control is working')
+ })
 
 // API
 const baseURL = 'https://api.meaningcloud.com/sentiment-2.1?'
@@ -45,16 +51,6 @@ app.post('/api', async function(req, res) {
     const mcData = await response.json()
     console.log(mcData)
     res.send(mcData)
-    /** server sends only specified data to the client with below codes
-     * const projectData = {
-     *  score_tag : mcData.score_tag,
-     *  agreement : mcData.agreement,
-     *  subjectivity : mcData.subjectivity,
-     *  confidence : mcData.confidence,
-     *  irony : mcData.irony
-     * }
-     * res.send(projectData);
-     * */
 })
 
 // designates what port the app will listen to for incoming requests
