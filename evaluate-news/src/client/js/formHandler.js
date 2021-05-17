@@ -1,55 +1,70 @@
 function handleSubmit(event) {
-  event.preventDefault()
-// check what text was put into the form field
-let formText = document.getElementById('name').value
-  Client.checkForName(formText)
-  console.log("::: Form Submitted :::")
+    event.preventDefault()
+
+    // check what text was put into the form field
+    let formText = document.getElementById('url').value
+
+    if(Client.validURL(formText)) {
+    console.log("::: Form Submitted :::", formText)
+
+    postData('http://localhost:8081/api', {url: formText})
+
+    .then(function(res) {
+        // document.getElementById('polarity').innerHTML = `Polarity: `+polarityChecker(res.score_tag);
+        document.getElementById("agreement").innerHTML = `Agreement: ${res.agreement}`;
+        document.getElementById("subjectivity").innerHTML = `Subjectivity: ${res.subjectivity}`;
+        document.getElementById("confidence").innerHTML = `Confidence: ${res.confidence}`;
+        document.getElementById("irony").innerHTML = `Irony: ${res.irony}`;
+    })
+    } else {
+        alert('Seems like an invalid URL, please try with a valid URL.');
+    }
 }
-export default { handleSubmit }
 
-// import { validURL } from './URLChecker.js'
+const postData = async (url = "", data = {}) => {
+    console.log('Analyzing:', data);
+    const response = await fetch(url, {
+        method: 'POST',
+        credentials: 'same-origin',
+        mode: 'cors',
+        headers: {
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    });
+    try {
+        const newData = await response.json();
+        console.log('Data received:', newData)
+        return newData;
+    } catch (error) {
+        console.log('error', error);
+    }
+};
 
-// const postDate = async (url = 'article-url', data = {}) => {
-//   const response = await fetch(url, {
-//     method: 'POST',
-//     credentials: 'same-origin',
-//     mode: 'cors',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(data),
-//   })
-//   try {
-//       return await response.json()
-//   } catch (error) {
-//     console.log(error)
-//   }
-// }
+// API response output (https://www.meaningcloud.com/developer/sentiment-analysis/doc/2.1/response)
+const polarityChecker = (score) => {
+    let display;
+    switch (score){
+        case 'P+':
+            display = 'strong positive';
+            break;
+        case 'P':
+            display = 'positive';
+            break;
+        case 'NEW':
+            display = 'neutral';
+            break;
+        case 'N':
+            display = 'negative';
+            break;
+        case 'N+':
+            display = 'strong negative';
+            break;
+        case 'NONE':
+            display = 'no sentiment';
+    }
+    return display.toUpperCase();
+}
 
-// const handleSubmit = async () => {
-//   /**
-//    * Get Value of the input for URL
-//    * Check if it's URL or not
-//    *  yes
-//    *      send it to the backend
-//    *  no
-//    *      show user message it's not valid URL
-//    */
-
-//   const articleUrl = document.getElementById('article-url').value
-//   if (validURL(articleUrl)) {
-//     const mcData = await postDate('http://localhost:8081/add-url', {
-//         articleUrl
-//     })
-//     document.getElementById('text').textContent = mcData.text
-//     document.getElementById('agreement').textContent = mcData.agreement
-//     document.getElementById('confidence').textContent = mcData.confidence
-//     document.getElementById('score_tag').textContent = mcData.score_tag
-//     document.getElementById('subjectivity').textContent = mcData.subjectivity
-//     document.getElementById('irony').textContent = mcData.irony
-//   } else {
-//     alert('Enter a valid URL')
-//   }
-// }
-
-// export default handleSubmit
+export { handleSubmit }
+export { polarityChecker }

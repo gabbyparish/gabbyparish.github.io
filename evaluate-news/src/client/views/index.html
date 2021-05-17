@@ -18,26 +18,21 @@
       <div class="container">
         <p>Enter a URL of an article / a blog here</p>
         <section>
-          <form id="form">
-            <label for="url">Analyse Here</label>
-            <input id="article-url" type="text" name="input" value="" placeholder="Enter Article URL here" />
-            <button
-              type="submit"
-              class="btn"
-            >
-              Submit
-            </button>
+          <form class="" onsubmit="return Client.handleSubmit(event)">
+              <input id="url" type="text" name="input" value="" placeholder="Enter URL here">
+              <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
           </form>
-        </section>
+      </section>
 
-        <section>
+        <section class="results">
           <strong>Form Results:</strong>
           <div id="text"></div>
           <div id="agreement"></div>
           <div id="subjectivity"></div>
           <div id="confidence"></div>
           <div id="irony"></div>
-          <div id="score_tag"></div>
+          <div id="score-tag"></div>
+          <div id="promise"></div>
         </section>
       </div>
     </main>
