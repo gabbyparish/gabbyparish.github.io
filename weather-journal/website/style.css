@@ -1,0 +1,125 @@
+body{
+    background: #fffff8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-content: center;
+    /* grid-template-columns:  */
+    color: #072196;
+    grid-gap: 1em;
+    padding: 5px;
+}
+
+.holder{
+    display: grid;
+    grid: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.feel {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.entry{
+    background: rgb(181, 204, 247);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#entryHolder{
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#date {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#temp,
+#content {
+  padding: 0 1rem 0 1rem;
+}
+
+.headline {
+    color: slateblue;
+}
+.title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:#dfe4f7;
+    color: slateblue;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+button{
+    width: 300px;
+    height: 70px;
+    background:  #072196;
+    color: rgb(181, 204, 247);
+    font-size: 26px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#dfe4f7;
+    color: slateblue;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #072196; 
+    font-family: Arial, Helvetica, sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #072196; 
+    font-family: Arial, Helvetica, sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #072196; 
+    font-family: Arial, Helvetica, sans-serif;
+
+} 

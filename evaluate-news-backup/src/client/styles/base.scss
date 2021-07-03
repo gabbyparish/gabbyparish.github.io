@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+input {
+    border: coral solid 1px;
+    border-radius: 20px;
+    background-color: darksalmon;
+    color: white;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.container{
+    margin: auto;
+}
