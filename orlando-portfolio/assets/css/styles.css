@@ -1,0 +1,177 @@
+
+
+/* ---- Base Rules ---- */
+body {
+    background: #FFF9EB;
+    color: #41445D;
+}
+
+
+/* Typography General*/
+
+
+/* NEUE METANA */
+@font-face {
+    font-family: 'neue_metanabold';
+    src: url('fonts/neue-metana/neuemetana-bold-webfont.woff2') format('woff2'),
+         url('fonts/neue-metana/neuemetana-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neue_metanaregular';
+    src: url('fonts/neue-metana/neuemetana-regular-webfont.woff2') format('woff2'),
+         url('fonts/neue-metana/neuemetana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* NEUE MACHINA */
+
+@font-face {
+    font-family: 'neue_machinalight';
+    src: url('fonts/neue-machina/neuemachina-light-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'neue_machinaregular';
+    src: url('fonts/neue-machina/neuemachina-regular-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'neue_machinaultrabold';
+    src: url('fonts/neue-machina/neuemachina-ultrabold-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-ultrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1 {
+    font-family: 'neue_metanabold';
+    src: url('fonts/neue-metana/neuemetana-bold-webfont.woff2') format('woff2'),
+         url('fonts/neue-metana/neuemetana-bold-webfont.woff') format('woff');
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1em;
+    font-family: 'neue_metanabold';
+    src: url('fonts/neue-metana/neuemetana-bold-webfont.woff2') format('woff2'),
+         url('fonts/neue-metana/neuemetana-bold-webfont.woff') format('woff');
+}
+
+
+h2 {
+    font-size: 2em;
+    font-family: 'neue_metanabold';
+    src: url('fonts/neue-metana/neuemetana-bold-webfont.woff2') format('woff2'),
+         url('fonts/neue-metana/neuemetana-bold-webfont.woff') format('woff');
+}
+
+p {
+    line-height: 1.6em;
+    font-family: 'neue_machinalight';
+    src: url('fonts/neue-machina/neuemachina-light-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-light-webfont.woff') format('woff');
+}
+
+li {
+    list-style: none;
+}
+
+/* ---- Layout Rules ---- */
+img {
+    width: 10%;
+}
+
+/* ---- Module Rules ---- */
+
+/* Navigation Styles*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu img {
+    width: 30%;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    background-color: #FFF9EB;
+    top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.nav-images img{
+    padding: 10px;
+}
+
+
+/* Footer Styles */
+
+
+/* ---- Theme Rules ---- */
+
+.frame-1 {
+    width: 258px;
+    height: 654px;
+    background-color: var(--token-266ba3e9-5356-44ea-bdc3-dd2d5a7b51af, #41445d);
+    overflow: visible;
+    border-radius: 15px;
+  }
+  
+.frame-2 {
+    width: 428px;
+    height: 627px;
+    background-color: var(--token-266ba3e9-5356-44ea-bdc3-dd2d5a7b51af, #41445d);
+    overflow: visible;
+    border-radius: 15px;
+    z-index: -1;
+  }
+
+/* Landing Container Styles */
+
+.landing h1 {
+    background-color: #FFF9EB;
+    border-radius: 15px;
+}
+
+/* ---- Theme State Rules ---- */
+/* Section Active Styles */
+/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+
+
+/* Section Active Styles Keyframe Animations */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg)
+		           translate(-1em)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-1em) 
+		           rotate(-360deg);
+	}
+}
