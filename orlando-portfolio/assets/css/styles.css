@@ -7,6 +7,27 @@ body {
     margin: 0px;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+    padding: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #41445D; 
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFF9EB; 
+    border: 3px solid #41445D;
+    border-radius: 15px;
+  }
+  
 
 /* Typography General*/
 
@@ -317,8 +338,9 @@ header {
 
 /* Clients Start */
 
-.clients {
+.clients section {
     padding: 10px;
+    height: max-content;
 }
 
 .clients h1 {
@@ -333,21 +355,26 @@ header {
 }
 
 #all-clients {
-    width: max-content;
-    position: relative;
-    top: 0;
-    left: 0px;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    overflow-x: scroll;
+    scroll-padding: 0 50%;
+    scroll-snap-type: x mandatory;
+    margin: 15px;
 }
+
+#all-clients.active {
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
 
 .client-item img {
     width: 90px;
     height: 90px;
     object-fit: contain;
+    border-radius: 15px;
+    background-color: white;
 }
 
 .client-item {
