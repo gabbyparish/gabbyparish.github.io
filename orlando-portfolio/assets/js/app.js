@@ -11,20 +11,20 @@ function slide(wrapper, items, prev, next) {
       posInitial,
       posFinal,
       threshold = 100,
-      slides = items.getElementsByClassName('slide'),
+      slides = items.getElementsByClassName('client-item'),
       slidesLength = slides.length,
-      slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
-      firstSlide = slides[0],
-      lastSlide = slides[slidesLength - 1],
-      cloneFirst = firstSlide.cloneNode(true),
-      cloneLast = lastSlide.cloneNode(true),
+      slideSize = items.getElementsByClassName('client-item')[0].offsetWidth,
+    //   firstSlide = slides[0],
+    //   lastSlide = slides[slidesLength - 1],
+    //   cloneFirst = firstSlide.cloneNode(true),
+    //   cloneLast = lastSlide.cloneNode(true),
       index = 0,
       allowShift = true;
   
-  // Clone first and last slide
-  items.appendChild(cloneFirst);
-  items.insertBefore(cloneLast, firstSlide);
-  wrapper.classList.add('loaded');
+//   // Clone first and last slide
+//   items.appendChild(cloneFirst);
+//   items.insertBefore(cloneLast, firstSlide);
+//   wrapper.classList.add('loaded');
   
   // Mouse and Touch events
   items.onmousedown = dragStart;

@@ -317,6 +317,15 @@ header {
 
 /* Clients Start */
 
+.clients {
+    padding: 10px;
+}
+
+.clients h1 {
+    display: flex;
+    justify-content: center;
+}
+
 #client-container {
     overflow: hidden;
     position: relative;
@@ -327,7 +336,7 @@ header {
     width: max-content;
     position: relative;
     top: 0;
-    left: -300px;
+    left: 0px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -345,30 +354,10 @@ header {
     width: 100%;
     transition: all 1s;
     position: relative;
+    padding: 5px;
 }
 
-.prev,
-.next {
-  background-size: 22px;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
 
-.prev {
-  background-image: url(ChevronLeft.png);
-  left: -20px;
-}
-
-.next {
-  background-image: url(ChevronRight-512.png);
-  right: -20px;
-}
-
-.prev:active,
-.next:active {
-  transform: scale(0.8);
-}
 
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {
