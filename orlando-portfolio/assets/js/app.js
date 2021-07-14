@@ -1,150 +1,118 @@
-/**
- * 
- * Manipulating the DOM exercise.
- * Exercise programmatically builds navigation,
- * scrolls to anchors from navigation,
- * and highlights section in viewport upon scrolling.
- * 
- * Dependencies: None
- * 
- * JS Version: ES2015/ES6
- * 
- * JS Standard: ESlint
- * 
-*/
+var slider = document.getElementById('client-container'),
+    sliderItems = document.getElementById('all-clients'),
+    prev = document.getElementById('prev'),
+    next = document.getElementById('next');
 
-/**
- * Define Global Variables
- * 
-*/
+slide(slider, sliderItems, prev, next);
 
-let navList = document.querySelector("#navbar__list");
-const sections = document.querySelectorAll("section");
+function slide(wrapper, items, prev, next) {
+  var posX1 = 0,
+      posX2 = 0,
+      posInitial,
+      posFinal,
+      threshold = 100,
+      slides = items.getElementsByClassName('slide'),
+      slidesLength = slides.length,
+      slideSize = items.getElementsByClassName('slide')[0].offsetWidth,
+      firstSlide = slides[0],
+      lastSlide = slides[slidesLength - 1],
+      cloneFirst = firstSlide.cloneNode(true),
+      cloneLast = lastSlide.cloneNode(true),
+      index = 0,
+      allowShift = true;
+  
+  // Clone first and last slide
+  items.appendChild(cloneFirst);
+  items.insertBefore(cloneLast, firstSlide);
+  wrapper.classList.add('loaded');
+  
+  // Mouse and Touch events
+  items.onmousedown = dragStart;
+  
+  // Touch events
+  items.addEventListener('touchstart', dragStart);
+  items.addEventListener('touchend', dragEnd);
+  items.addEventListener('touchmove', dragAction);
+  
+  // Click events
+  prev.addEventListener('click', function () { shiftSlide(-1) });
+  next.addEventListener('click', function () { shiftSlide(1) });
+  
+  // Transition events
+  items.addEventListener('transitionend', checkIndex);
+  
+  function dragStart (e) {
+    e = e || window.event;
+    e.preventDefault();
+    posInitial = items.offsetLeft;
+    
+    if (e.type == 'touchstart') {
+      posX1 = e.touches[0].clientX;
+    } else {
+      posX1 = e.clientX;
+      document.onmouseup = dragEnd;
+      document.onmousemove = dragAction;
+    }
+  }
 
-/**
- * End Global Variables
- * Start Helper Functions
- * 
-*/
+  function dragAction (e) {
+    e = e || window.event;
+    
+    if (e.type == 'touchmove') {
+      posX2 = posX1 - e.touches[0].clientX;
+      posX1 = e.touches[0].clientX;
+    } else {
+      posX2 = posX1 - e.clientX;
+      posX1 = e.clientX;
+    }
+    items.style.left = (items.offsetLeft - posX2) + "px";
+  }
+  
+  function dragEnd (e) {
+    posFinal = items.offsetLeft;
+    if (posFinal - posInitial < -threshold) {
+      shiftSlide(1, 'drag');
+    } else if (posFinal - posInitial > threshold) {
+      shiftSlide(-1, 'drag');
+    } else {
+      items.style.left = (posInitial) + "px";
+    }
 
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+  
+  function shiftSlide(dir, action) {
+    items.classList.add('shifting');
+    
+    if (allowShift) {
+      if (!action) { posInitial = items.offsetLeft; }
 
+      if (dir == 1) {
+        items.style.left = (posInitial - slideSize) + "px";
+        index++;      
+      } else if (dir == -1) {
+        items.style.left = (posInitial + slideSize) + "px";
+        index--;      
+      }
+    };
+    
+    allowShift = false;
+  }
+    
+  function checkIndex (){
+    items.classList.remove('shifting');
 
-// Add functions to disable sections 
+    if (index == -1) {
+      items.style.left = -(slidesLength * slideSize) + "px";
+      index = slidesLength - 1;
+    }
 
-function disableSections() {
-	sections.forEach((element)=>{
-		element.classList.remove('your-active-class', 'active');
-	});
+    if (index == slidesLength) {
+      items.style.left = -(1 * slideSize) + "px";
+      index = 0;
+    }
+    
+    allowShift = true;
+  }
 }
-
-function disableNavLinks() {
-	let navAnchors = document.querySelectorAll('.nav__hyperlink');
-	navAnchors.forEach((element)=> {
-		element.classList.remove('active-nav');
-	});
-}
-
-// Add class 'active' to section when near top of viewport
-
-function activateSection(currSection) {
-	currSection.classList.add('your-active-class', 'active');
-
-	disableNavLinks();
-	enableNavLinks(currSection.getAttribute('id'));
-}
-
-function enableNavLinks(curSectionId) {
-	let navAnchors = document.querySelectorAll('.nav__hyperlink');
-	navAnchors.forEach((element)=> {
-		if (element.getAttribute('href')== `#${curSectionId}`) {
-			element.classList.add('active-nav');
-		}
-	});
-}
-
-function inViewport(element) {
-	var coordinate = element.getBoundingClientRect();
-
-	return (
-		coordinate.top >= -300 &&
-		coordinate.left >= 0 &&
-		coordinate.bottom <= (1.3 * window.innerHeight || document.documentElement.clientHeight)&&
-		coordinate.right <= (window.innerWidth || document.documentElement.clientWidth)
-	);
-};
-
-// Build menu 
-
-function createNavBar() {
-	sections.forEach((element)=>{
-	    let navItem = document.createElement("li");
-	    navItem.classList.add("navbar__list__item");
-    	let sectionName = element.getAttribute("data-nav");
-    	let curSectionId = element.getAttribute("id");
-        navItem.innerHTML = `<a href="#${curSectionId}" class="nav__hyperlink">${sectionName}</a>`;
-        navList.appendChild(navItem);
-        console.log(sectionName);
-    });
-}
-
-// Scroll to anchor ID using scrollTO event
-
-function scrollToAnchorClick() {
-	let navAnchors = document.querySelectorAll('.nav__hyperlink');
-	navAnchors.forEach((element) => {
-		element.addEventListener('click', function(event) {
-			event.preventDefault();
-			document.querySelector(element.getAttribute('href')).scrollIntoView({
-				behavior: 'smooth'
-			});
-		});	
-	});
-}
-
-/**
- * End Helper Functions
- * Begin Main Functions
- * 
-*/
-
-// build the nav
-
-window.addEventListener('load', createNavBar ()) 
-
-// Scroll to section on link click
-
-scrollToAnchorClick();
-
-// Set sections as active
-
-window.addEventListener('scroll', function (event) {
-	event.preventDefault();
-
-	sections.forEach((element) => {
-		if(inViewport(element)) {
-			disableSections();
-			activateSection(element);
-		} else if(window.scrollY==0) {
-			disableSections();
-			disableNavLinks();
-		}
-	}, false);
-});
-
-/**
- * End Main Functions
- * 
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
