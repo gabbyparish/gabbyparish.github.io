@@ -7,7 +7,7 @@ body {
     margin: 0px;
 }
 
-::-webkit-scrollbar {
+.clients ::-webkit-scrollbar {
     width: 10px;
     height: 20px;
     padding: 20px;
@@ -153,12 +153,18 @@ header {
 
 /* Footer Styles */
 
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 00px;
+}
 
 /* ---- Theme Rules ---- */
 
 .frame-1 {
     width: 258px;
-    height: 654px;
+    height: 926px;
     background-color: #41445D;
     position: absolute;
     border-radius: 15px;
@@ -176,12 +182,13 @@ header {
     border-radius: 15px;
     z-index: -4;
     top: -200px;
-
+    margin-bottom: 50px;
   }
 
 /* Landing Container Styles */
 
 .landing h1 {
+    top: 552;
     background-color: #FFF9EB;
     border-radius: 15px;
     display: flex;
@@ -215,22 +222,30 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 926px;
 }
 
 /* About Styles */
 
-.walking {
-    width: 100%;
-    position: absolute;
-    top: 900px;
+.walking-box {
     display: flex;
     justify-items: center;
+    position: absolute;
+    top: 960px;
+    width: 428px;
+}
+
+.walking {
+    position: relative;
 }
 .walking img {
-    width: 50%;
+    width: 70%;
 }
 
 .about {
+    height: 500px;
+    position: relative;
+    top: 220px;
     margin: 30px;
     margin-bottom: 300px;
 }
@@ -340,7 +355,7 @@ header {
 
 .clients section {
     padding: 10px;
-    height: max-content;
+    height: 650px;
 }
 
 .clients h1 {
@@ -384,7 +399,123 @@ header {
     padding: 5px;
 }
 
+/* Testimonials Start */
 
+.testimonials {
+    padding: 10px;
+    height: 660px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.testimonials h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.test-inner {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.test-item {
+    padding: 5px;
+    width: 428px;
+    text-align: center;
+}
+
+.test-item p {
+   padding: 25px;
+}
+
+.test-item b {
+    font-family: 'neue_machinaultrabold';
+    src: url('fonts/neue-machina/neuemachina-ultrabold-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-ultrabold-webfont.woff') format('woff');
+}
+
+.test-item img {
+    width: 150px;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+ /* Experience Start */
+
+
+ .experience h1 {
+     display: flex;
+     justify-content: center;
+     padding: 10px;
+ }
+
+ .timeline {
+     height: 1400px;
+     background-color: #41445D;
+     border-radius: 15px;
+ }
+
+ .timeline h2 {
+     color: #FFF9EB;
+     padding: 15px;
+     width: 50%;
+ }
+
+ .timeline h3 {
+     width: 300px;
+     background-color: #FFF9EB;
+     padding: 20px;
+     border-radius: 15px;
+     margin-left: 40px;
+     margin-right: 40px;
+     text-align: right;
+ }
+
+ /* Chat Start */
+
+ .message {
+     padding: 10px;
+     height: 850px;
+ }
+
+ .details {
+     background-color: #41445D;
+     border-radius: 15px;
+     padding: 10px;
+     height: 645px;
+     
+ }
+
+ .message h2 {
+     color: #FFF9EB;
+     padding: 10px;
+ }
+
+ .email-entry {
+    font-family: 'neue_machinalight';
+    src: url('fonts/neue-machina/neuemachina-light-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-light-webfont.woff') format('woff');
+     background-color: #FFF9EB;
+     padding: 10px;
+     width: 386px;
+     border-radius: 15px;
+ }
+
+ .ask {
+     height: 180px;
+ }
+
+ .end-icon {
+     position: relative;
+     top: -100px;
+     display: flex;
+     justify-content: center;
+     width: 40%;
+ }
 
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {
