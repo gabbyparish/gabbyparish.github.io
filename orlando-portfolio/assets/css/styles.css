@@ -157,7 +157,8 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 00px;
+    align-items: baseline;
+    opacity: 70%;
 }
 
 /* ---- Theme Rules ---- */
@@ -511,7 +512,7 @@ footer {
 
  .end-icon {
      position: relative;
-     top: -100px;
+     top: -130px;
      display: flex;
      justify-content: center;
      width: 40%;
