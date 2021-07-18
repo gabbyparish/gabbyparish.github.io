@@ -12,6 +12,7 @@ body {
 section {
     width: 100wh;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .clients ::-webkit-scrollbar {
@@ -95,6 +96,7 @@ h1 {
     src: url('fonts/neue-metana/neuemetana-bold-webfont.woff2') format('woff2'),
          url('fonts/neue-metana/neuemetana-bold-webfont.woff') format('woff');
     font-size: 3em;
+    padding: 10px;
 }
 
 h3 {
@@ -163,9 +165,10 @@ header {
 footer {
     display: flex;
     justify-content: center;
-    position: relative;
+    position:relative;
     align-items: baseline;
     opacity: 70%;
+    width: 100wh;
 }
 
 /* ---- Theme Rules ---- */
@@ -240,9 +243,9 @@ footer {
 .walking-box {
     display: flex;
     justify-items: center;
-    position: absolute;
-    top: 960px;
+    position: relative;
     width: 100vw;
+    top: -100px;
 }
 
 .walking {
@@ -253,11 +256,9 @@ footer {
 }
 
 .about {
-    height: 500px;
     position: relative;
-    top: 220px;
     margin: 30px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 
 /* Services Menu Styles */
@@ -438,7 +439,7 @@ footer {
 
 .test-item {
     padding: 5px;
-    width: 428px;
+    width: 100wh;
     text-align: center;
 }
 
@@ -525,12 +526,12 @@ footer {
      height: 180px;
  }
 
- .end-icon {
-     position: relative;
-     top: -130px;
+ .end-icon img{
+     position: absolute;
      display: flex;
      justify-content: center;
-     width: 40%;
+     bottom: 200px;
+     width: 100%;
  }
 
 /* Section Active Styles Keyframe Animations */
