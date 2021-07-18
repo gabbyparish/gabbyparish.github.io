@@ -5,6 +5,13 @@ body {
     background: #FFF9EB;
     color: #41445D;
     margin: 0px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100wh;
+    overflow-x: hidden;
 }
 
 .clients ::-webkit-scrollbar {
@@ -165,7 +172,7 @@ footer {
 
 .frame-1 {
     width: 258px;
-    height: 926px;
+    height: 626px;
     background-color: #41445D;
     position: absolute;
     border-radius: 15px;
@@ -189,7 +196,7 @@ footer {
 /* Landing Container Styles */
 
 .landing h1 {
-    top: 552;
+    top: 572;
     background-color: #FFF9EB;
     border-radius: 15px;
     display: flex;
@@ -198,6 +205,7 @@ footer {
     margin: 60px;
     width: 100%;
     padding: 10px;
+    position: relative;
 }
 
 .landing h2 {
@@ -224,6 +232,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     height: 926px;
+    width: 100vw;
 }
 
 /* About Styles */
@@ -233,7 +242,7 @@ footer {
     justify-items: center;
     position: absolute;
     top: 960px;
-    width: 428px;
+    width: 100vw;
 }
 
 .walking {
@@ -255,6 +264,7 @@ footer {
 
 .services-menu {
     padding-top: 10px;
+    width: 100vw;
 }
 
 .services-menu h1 {
@@ -275,7 +285,6 @@ footer {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     position: relative;
-    margin-bottom: -20px;
 }
 
 .industries {
@@ -296,6 +305,12 @@ footer {
 
 .services h3 {
     padding: 10px;
+}
+
+.services {
+    width: 100%;
+    padding: 10px;
+    position: relative;
 }
 
 .markets {
@@ -325,7 +340,7 @@ footer {
 }
 
 .digital h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
 }
 
 .digital {
