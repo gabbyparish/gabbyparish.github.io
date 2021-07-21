@@ -13,19 +13,35 @@
   <div class="sidebar">
     <img src="assets/images/sidebar.svg" alt="">
   </div>
+
+  
   <header class="desktop-header">
     <div class="nav-container">
-      <div class="menu"><img src="assets/images/menu.svg" alt=""></div>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn menu">
+          <img src="assets/images/menu.svg" alt="">
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">home</a>
+          <a href="#about">about</a>
+          <a href="#services">services</a>
+          <a href="#clients">clients</a>
+          <a href="#test">testimonials</a>
+          <a href="#exp">experience</a>
+          <a href="#chat">chat</a>
+        </div>
+      </div>
+      
       <nav class="main-list">
         <ul class="desktop list">
           <li>
             <a href="#">home</a>
           </li>
           <li>
-            <a href="#">about</a>
+            <a href="#about">about</a>
           </li>
           <li>
-            <a href="#">work</a>
+            <a href="#services">services</a>
           </li>
         </ul>
       </nav>
@@ -65,6 +81,9 @@
   <!-- HOME END -->
 
   <!-- ABOUT START -->
+  <div id="about">
+    
+  </div>
   <div class="about">
     <div class="walking">
       <img src="assets/images/human-walking.png" alt="">
@@ -86,20 +105,27 @@
   <!-- ABOUT END -->
 
   <!-- SERVICES START -->
+  <div id="services"></div>
   <div class="services">
     <section class="services-menu">
       <h1>Services</h1>
-      <h2 class="blue-bg industries">
-        Markets & Industries
-      </h2>
-      <h2 class="white-bg">
-        Business & Change
-      </h2>
-      <h2 class="blue-bg">
-        Digital Transformation
-      </h2>
+      <a href="#markets">
+        <h2 class="blue-bg industries">
+          Markets & Industries
+        </h2>
+      </a>
+      <a href="#business">
+        <h2 class="white-bg">
+          Business & Change
+        </h2>
+      </a>
+      <a href="#digital">
+        <h2 class="blue-bg">
+          Digital Transformation
+        </h2>
+      </a>
     </section>
-  
+    <div id="markets"></div>
     <section class="markets serv">
       <h1>
         Markets & Industries
@@ -163,7 +189,7 @@
         BUSINESS & COMPETITIVE ANALYSIS (LINK)
       </h3>
     </section>
-  
+    <div id="business"></div>
     <section class="business serv">
       <h1>
         Business & Change
@@ -225,13 +251,14 @@
       </h3>
     </section>
   
+    <div id="digital"></div>
     <section class="digital serv">
       <h1>
         Digital Transformations
       </h1>
       <p>
         Digital transformations are key to engaging customers. Customers prefer digital-first to engage with your organisation or brand 
-        to gain awareness or to buy.Digital transformations can be complex and may involve:
+        to gain awareness or to buy. Digital transformations can be complex and may involve:
       </p>
       <ul>
         <div class="points">
@@ -294,6 +321,7 @@
   <!-- SERVICES END -->
 
   <!-- CLIENTS START -->
+  <div id="clients"></div>
   <section class="clients">
     <h1>Clients</h1>
     <div id="client-container">
@@ -421,6 +449,7 @@
   <!-- CLIENTS END -->
 
   <!-- TESTIMONIALS START -->
+  <div id="test"></div>
   <section class="testimonials">
     <h1>Testimonials</h1>
       <div class="test-container">
@@ -499,6 +528,7 @@
     <!-- TESTIMONIALS END -->
   
     <!-- EXPERIENCE START -->
+    <div id="exp"></div>
     <section class="experience">
       <h1>Experience</h1>
       <div class="timeline">
@@ -530,6 +560,7 @@
   <!-- EXPERIENCE END -->
 
   <!-- MESSAGE START -->
+  <div id="chat"></div>
   <section class="chat">
     <h1>Want to Chat?</h1>
     <ul class="details">
@@ -556,7 +587,7 @@
     </div>
   </footer>
   <!-- FOOTER END -->
-  <script src="assets/js/glider.js"></script>
+  <script src="assets/js/main.js"></script>
  
 </body>
 </html>
