@@ -10,6 +10,7 @@ body {
 }
 
 section {
+    margin: 0px;
     width: 100wh;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -36,6 +37,9 @@ section {
     border-radius: 15px;
   }
   
+  .sidebar {
+      display: none;
+  }
 
 /* Typography General*/
 
@@ -136,13 +140,14 @@ img {
 
 /* Navigation Styles*/
 
-.nav {
+.nav-container {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding: 5px;
 }
 
-.menu img {
+.menu img{
     width: 30%;
 }
 
@@ -156,6 +161,14 @@ header {
     z-index: 3;
 }
 
+.header {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
 .nav-images img{
     padding: 10px;
 }
@@ -166,10 +179,20 @@ header {
 footer {
     display: flex;
     justify-content: center;
-    position:relative;
-    align-items: baseline;
+    flex-wrap: wrap;
+}
+.end-icon {
+    width: 200px;
+    margin-top: -100px;
+}
+.end-icon img{
+    width: 50%;
+}
+
+.copyright p {
     opacity: 70%;
-    width: 100wh;
+    width: 100vw;
+    text-align: center;
 }
 
 /* ---- Theme Rules ---- */
@@ -198,6 +221,9 @@ footer {
   }
 
 /* Landing Container Styles */
+.logo {
+    display: none;
+}
 
 .landing h1 {
     top: 572;
@@ -241,35 +267,28 @@ footer {
 
 /* About Styles */
 
-.walking-box {
-    display: flex;
-    justify-items: center;
-    position: relative;
-    width: 100vw;
-    top: -100px;
-}
-
-.walking {
-    position: relative;
-}
-.walking img {
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .about {
-    position: relative;
-    margin: 30px;
-    margin-bottom: 150px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about p {
+    padding: 10px;
+    width: 400px;
+}
+
+.walking img{
+    width: 80%;
+    margin-top: -80px;
 }
 
 /* Services Menu Styles */
 
 .services-menu {
     padding-top: 10px;
-    width: 100vw;
 }
 
 .services-menu h1 {
@@ -279,9 +298,7 @@ footer {
     font-size: 4em;
 }
 
-.services h2 {
-    align-items: flex-start;
-}
+
 
 .blue-bg {
     background-color: #41445D;
@@ -314,7 +331,6 @@ footer {
 
 .services {
     width: 100%;
-    padding: 10px;
     position: relative;
 }
 
@@ -511,9 +527,12 @@ footer {
 
  /* Chat Start */
 
- .message {
-     padding: 10px;
+ .chat {
+     padding: 20px;
      height: 850px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
  }
 
  .details {
@@ -521,15 +540,18 @@ footer {
      border-radius: 15px;
      padding: 10px;
      height: 645px;
-     
  }
 
- .message h2 {
+ .chat h1 {
+     font-size: 2.5em;
+ }
+
+ .chat h2 {
      color: #FFF9EB;
      padding: 10px;
  }
 
- .email-entry {
+ #email-entry {
     font-family: 'neue_machinalight';
     src: url('fonts/neue-machina/neuemachina-light-webfont.woff2') format('woff2'),
          url('fonts/neue-machina/neuemachina-light-webfont.woff') format('woff');
@@ -539,8 +561,27 @@ footer {
      border-radius: 15px;
  }
 
- .ask {
+ #message {
      height: 180px;
+     font-family: 'neue_machinalight';
+        src: url('fonts/neue-machina/neuemachina-light-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-light-webfont.woff') format('woff');
+     background-color: #FFF9EB;
+     padding: 10px;
+     width: 386px;
+     border-radius: 15px;
+ }
+
+ #submit {
+     border-radius: 15px;
+     font-family: 'neue_machinalight';
+        src: url('fonts/neue-machina/neuemachina-light-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-light-webfont.woff') format('woff');
+    background-color: #FFF9EB;
+    color: #41445D;
+    padding: 5px;
+    margin-top: 10px;
+    width: 200px;
  }
 
  .end-icon img{
@@ -563,4 +604,336 @@ footer {
 		           translate(-1em) 
 		           rotate(-360deg);
 	}
+}
+
+/* DESKTOP MODE MEDIA QUERY */
+
+@media only screen and (min-width: 900px) {
+
+    /* BODY START */
+
+    .about-container,
+    .services-menu,
+    .markets,
+    .business,
+    .digital,
+    .testimonials,
+    .experience,
+    .chat {
+        margin-left: 212px;
+        margin-right: 212px;
+    }
+
+    /* HEADER START */
+    
+    header {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width: 91%;
+        display: flex;
+	    align-items: baseline;
+	    flex-wrap: nowrap;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .nav-container {
+        width: 960px;
+	    max-width: 100%;
+	    padding: 20px;
+	    margin: 0 auto;
+    }
+
+    .desktop-header .nav-container {
+        display: flex;
+	    align-items: center;
+	    justify-content: space-around;
+	    flex-wrap: nowrap;
+    }
+
+    .main-list .nav-container {
+        justify-content: space-between;
+    }
+
+    .main-list ul {
+        margin: 1em 0 .5em;
+        text-align: center;
+    }
+
+    .main-list li {
+        display: inline;
+    }
+    .main-list a {
+        display: inline-block;
+        padding: .5em 1.5em;
+        text-decoration: none;
+        color: #41445D;
+    }
+
+    .nav-images {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 0px;
+        width: max-content;
+    }
+
+    .nav-images {
+        width: 40%;
+	    height: auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .list {
+        font-family: 'neue_machinaultrabold';
+            src: url('fonts/neue-machina/neuemachina-ultrabold-webfont.woff2') format('woff2'),
+            url('fonts/neue-machina/neuemachina-ultrabold-webfont.woff') format('woff');
+        display: flex;
+        font-size: 1.2em;
+        align-items: baseline;
+        margin-left: 150px;
+    }
+
+    .frame-1,
+    .frame-2 {
+        display: none;
+    }
+
+    /* LANDING START */
+
+    .landing h1,
+    .landing h2 {
+        display: none;
+    }
+
+    .landing {
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
+    .sidebar {
+        display: block;
+        width: 100vw;
+        position: absolute;
+        z-index: -2;
+        border-radius: 15px;
+    }
+
+    .sidebar img {
+        float: right;
+        margin-right: 0px;
+        width: 20%;
+    }
+
+    /* ABOUT START */
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 600px;
+        margin-bottom: 100px;
+    }
+    
+    /* SERVICES START */
+
+    .services-menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .services-menu h1{
+        padding-top: 10px;
+        display: flex;
+        background-color: #41445D;
+        color: #FFF9EB;
+        border-radius: 15px;
+        width: 900px;
+    }
+
+    .services-menu h2 {
+        display: none;
+    }
+
+    .serv h1 {
+        background-color: #41445D;
+        color: #FFF9EB;
+        border-radius: 15px;
+        font-family: 'neue_machinaultrabold';
+         src: url('fonts/neue-machina/neuemachina-ultrabold-webfont.woff2') format('woff2'),
+         url('fonts/neue-machina/neuemachina-ultrabold-webfont.woff') format('woff');
+        kerning: 8px;
+    }
+
+    .digital h1 {
+        font-size: 3em;
+    }
+
+    .services span {
+        font-family: 'neue_metanabold';
+        src: url('fonts/neue-metana/neuemetana-bold-webfont.woff2') format('woff2'),
+         url('fonts/neue-metana/neuemetana-bold-webfont.woff') format('woff');
+        font-size: 2em;
+        padding-right: 50px;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .serv h2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding: 10px;
+    }
+
+    .serv p {
+        width: 600px;
+        background-color: #FFF9EB;
+    }
+
+    .white-bg {
+        display: none;
+    }
+
+    .serv {
+        width: 950px;
+        background-color: #FFF9EB;
+        color: #41445D;
+    }
+
+    .business li p {
+        background-color: #FFF9EB;
+        color: #41445D;
+    }
+
+    .points {
+        width: 600px;
+    }
+
+    /* CLIENTS START */
+
+    .clients {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 200px;
+    }
+
+    #client-container {
+        width: 900px;
+    }
+
+    .clients h1 {
+        padding: 10px;
+        display: flex;
+        font-size: 4em;
+        background-color: #41445D;
+        color: #FFF9EB;
+        border-radius: 15px;
+        width: 900px;
+        margin-bottom: 50px;
+    }
+
+    /* TESTIMONIALS START */
+
+    .testimonials {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+    }
+
+    .test-container {
+        width: 900px;
+    }
+
+    .testimonials h1 {
+        padding: 10px;
+        display: flex;
+        font-size: 4em;
+        background-color: #41445D;
+        color: #FFF9EB;
+        border-radius: 15px;
+        width: 900px;
+    }
+
+    /* EXPERIENCE START */
+
+    .experience {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .experience h1 {
+        padding: 10px;
+        display: flex;
+        font-size: 4em;
+        background-color: #41445D;
+        color: #FFF9EB;
+        border-radius: 15px;
+        width: 900px;
+    }
+
+    .timeline {
+        width: 850px;
+    }
+
+
+    .timeline h2 {
+        font-size: 3em;
+    }
+
+    .timeline li {
+        display: flex;
+        align-items: baseline;
+        padding: 20px;
+    }
+
+    /* CHAT START */
+
+    .chat {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .chat h1 {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 4em;
+        background-color: #41445D;
+        color: #FFF9EB;
+        border-radius: 15px;
+        width: 900px;
+    }
+
+    .details {
+        justify-content: center;
+        padding: 40px;
+    }
+
 }
