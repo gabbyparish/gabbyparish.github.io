@@ -58,9 +58,10 @@ function myFunction() {
     }
   }
 
-  /* When the user clicks on the button,
+
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function aboutFunction() {
     document.getElementById("myAbout").classList.toggle("showabout");
   }
   
@@ -70,9 +71,9 @@ function myFunction() {
       var dropdowns = document.getElementsByClassName("about-content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('showabout')) {
-          openDropdown.classList.remove('showabout');
+        var openAbout = dropdowns[i];
+        if (openAbout.classList.contains('showabout')) {
+          openAbout.classList.remove('showabout');
         }
       }
     }
