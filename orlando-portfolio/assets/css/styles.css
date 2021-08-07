@@ -724,6 +724,14 @@ footer {
         position: relative;
         display: block;
       }
+
+      .desktop li {
+          align-items: baseline;
+      }
+
+      .desktop img {
+          width: 70%;
+      }
       
       /* Dropdown Content (Hidden by Default) */
       .about-content {
