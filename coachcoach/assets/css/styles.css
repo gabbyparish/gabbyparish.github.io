@@ -4,6 +4,12 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-family: 'Poppins', serif;
+    color: #3DB9EB;
+    font-size: 48px;
+    font-weight: 800px;
+}
 
 section {
     width: 428px;
@@ -18,13 +24,35 @@ a {
 
 .app-header {
     width: 428px;
+    position: relative;
+}
+
+.statusbar {
+    padding-bottom: 32px;
 }
 
 .header-content {
     display: flex;
     flex-flow: row wrap;
+    padding-bottom: 18px;
 }
 
+.header-icons {
+    display: flex;
+    flex-direction: row;
+    flex: 33.33% 0 0;
+    justify-content: space-evenly;
+}
+
+.back-button {
+    width: 40px;
+    position: relative;
+}
+
+.header-logo  {
+    width: 66px;
+    align-self: center;
+}
 
 /* APP HEADER END */
 
@@ -141,6 +169,15 @@ a {
 
 /* CREATE ACCOUNT START */
 
+.create-title {
+    padding-left: 18px;
+}
+
+.create-acc-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .ca-form-block {
     background-color: #EFFEF5;
     width: 428px;
@@ -164,16 +201,17 @@ a {
     margin-bottom: 23px;
 }
 
-
 .fill-in p {
     color: #EFFEF5;
     font-size: 80%;
+    margin-left: 10px;
     padding: 10px;
 }
 
 .fill-in-inverse p {
     color: #3DB9EB;
     font-size: 80%;
+    margin-left: 10px;
 }
 
 .fill-in-inverse {
@@ -183,6 +221,12 @@ a {
     height: 37px;
     border-radius: 22px;
     margin-bottom: 23px;
+}
+
+.ca-forward-button {
+    padding: 35px;
+    width: 40px;
+    align-self: center;
 }
 
 /* CREATE ACCOUNT END */
